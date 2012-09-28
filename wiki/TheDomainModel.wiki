@@ -1,5 +1,5 @@
 #labels UML
-The domain model implemented by _TurnKeyCareers_ can be found below.
+The domain model implemented by _*TurnKeyCareers*_ can be found below.
 
 = The Domain Model =
 
