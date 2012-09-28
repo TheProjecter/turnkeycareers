@@ -2,3 +2,5 @@
 The domain model implemented by _italic_TurnKeyCareers_italic_ can be found below.
 
 = The Domain Model =
+
+<div style="width:480px;text-align:right;"><embed width="480" height="360" src="http://static.pbsrc.com/flash/rss_slideshow.swf" flashvars="rssFeed=http%3A%2F%2Ffeed1285.photobucket.com%2Falbums%2Fa582%2Fgriddy777%2Ffeed.rss" type="application/x-shockwave-flash" wmode="transparent" /><a href="http://photobucket.com/redirect/album?showShareLB=1" target="_blank"><img src="http://pic.photobucket.com/share/icons/embed/btn_geturs.gif" style="border:none;" /></a><a href="http://s1285.photobucket.com/albums/a582/griddy777/" target="_blank"><img src="http://pic.photobucket.com/share/icons/embed/btn_viewall.gif" style="border:none;" /></a></div>
