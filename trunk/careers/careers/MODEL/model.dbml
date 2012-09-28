@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="careers" Class="ModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=careers;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="careersConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="unitNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="suburb" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Address" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BasicEdu" Member="BasicEdus">
+    <Type Name="BasicEdu">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="school" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="levelCompleted" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BasicEdu_BasicEduSubject" Member="BasicEduSubjects" ThisKey="userName" OtherKey="userName" Type="BasicEduSubject" />
+      <Association Name="Account_BasicEdu" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BasicEduSubject" Member="BasicEduSubjects">
+    <Type Name="BasicEduSubject">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subjectName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subjectDescription" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="BasicEdu_BasicEduSubject" Member="BasicEdu" ThisKey="userName" OtherKey="userName" Type="BasicEdu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HigherEducation" Member="HigherEducations">
+    <Type Name="HigherEducation">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="institution" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="educationType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="major" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="industry" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="length" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nqf" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_HigherEducation" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Language" Member="Languages">
+    <Type Name="Language">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reads" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="write" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="speak" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Language" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employment" Member="Employments">
+    <Type Name="Employment">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="company" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="industry" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="empType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="currentEmployer" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gross" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="endDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="responsibilities" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Employment" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Disability" Member="Disabilities">
+    <Type Name="Disability">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="disabilityType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Disability" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inbox" Member="Inboxes">
+    <Type Name="Inbox">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="messageId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="unread" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Inbox" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.License" Member="Licenses">
+    <Type Name="License">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_License" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Application" Member="Applications">
+    <Type Name="Application">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vacancy_Application" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+      <Association Name="Account_Application" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vacancy" Member="Vacancies">
+    <Type Name="Vacancy">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="viewStatus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="department" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="site" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="endDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="viewCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="manager" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="recruiter" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vacancy_Application" Member="Applications" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Application" />
+      <Association Name="Vacancy_VacancyKillerQuestion" Member="VacancyKillerQuestions" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="VacancyKillerQuestion" />
+      <Association Name="Vacancy_KeyWord" Member="KeyWords" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="KeyWord" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VacancyKillerQuestion" Member="VacancyKillerQuestions">
+    <Type Name="VacancyKillerQuestion">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="question" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="answer" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vacancy_VacancyKillerQuestion" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KeyWord" Member="KeyWords">
+    <Type Name="KeyWord">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="word" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Vacancy_KeyWord" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.supportDoc" Member="supportDocs">
+    <Type Name="supportDoc">
+      <Column Name="title" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Account_supportDoc" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Logs">
+    <Type Name="Log">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="accountType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Address" Member="Addresses" ThisKey="userName" OtherKey="userName" Type="Address" />
+      <Association Name="Account_BasicEdu" Member="BasicEdu" ThisKey="userName" OtherKey="userName" Type="BasicEdu" Cardinality="One" />
+      <Association Name="Account_HigherEducation" Member="HigherEducations" ThisKey="userName" OtherKey="userName" Type="HigherEducation" />
+      <Association Name="Account_Language" Member="Languages" ThisKey="userName" OtherKey="userName" Type="Language" />
+      <Association Name="Account_Employment" Member="Employments" ThisKey="userName" OtherKey="userName" Type="Employment" />
+      <Association Name="Account_Disability" Member="Disabilities" ThisKey="userName" OtherKey="userName" Type="Disability" />
+      <Association Name="Account_Inbox" Member="Inboxes" ThisKey="userName" OtherKey="userName" Type="Inbox" />
+      <Association Name="Account_License" Member="License" ThisKey="userName" OtherKey="userName" Type="License" Cardinality="One" />
+      <Association Name="Account_Application" Member="Applications" ThisKey="userName" OtherKey="userName" Type="Application" />
+      <Association Name="Account_supportDoc" Member="supportDocs" ThisKey="userName" OtherKey="userName" Type="supportDoc" />
+      <Association Name="Account_ContactInfo" Member="ContactInfos" ThisKey="userName" OtherKey="userName" Type="ContactInfo" />
+      <Association Name="Account_User" Member="Users" ThisKey="userName" OtherKey="userName" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactInfo" Member="ContactInfos">
+    <Type Name="ContactInfo">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="data" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_ContactInfo" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fullname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nickName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="race" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="citizenship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="idType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="license" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="basicEducation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="higherEducation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="language" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="residentialAddress" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="postalAddress" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="employed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="employmentHistory" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Account_User" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
