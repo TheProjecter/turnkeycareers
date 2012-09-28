@@ -3,4 +3,4 @@ The domain model implemented by _italic_TurnKeyCareers_italic_ can be found belo
 
 = The Domain Model =
 
-http://s1285.photobucket.com/albums/a582/griddy777/?action=view&current=CareersDomain.jpg
+[IMG]http://i1285.photobucket.com/albums/a582/griddy777/CareersDomain.jpg[/IMG]
