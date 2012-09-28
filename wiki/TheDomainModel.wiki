@@ -1,6 +1,6 @@
 #labels UML
-The domain model implemented by _italic_TurnKeyCareers_italic_ can be found below.
+The domain model implemented by _TurnKeyCareers_ can be found below.
 
 = The Domain Model =
 
-[IMG]http://i1285.photobucket.com/albums/a582/griddy777/CareersDomain.jpg[/IMG]
+http://i1285.photobucket.com/albums/a582/griddy777/CareersDomain.jpg
