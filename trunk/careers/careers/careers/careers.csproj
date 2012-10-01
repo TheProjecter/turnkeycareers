@@ -52,6 +52,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="00 Careers SQL Scripts\Account.sql" />
+    <Content Include="00 Careers SQL Scripts\Address.sql" />
+    <Content Include="00 Careers SQL Scripts\Application.sql" />
+    <Content Include="00 Careers SQL Scripts\BasicEdu.sql" />
+    <Content Include="00 Careers SQL Scripts\BasicEduSubject.sql" />
+    <Content Include="00 Careers SQL Scripts\careers create.sql" />
+    <Content Include="00 Careers SQL Scripts\ContactInfo.sql" />
+    <Content Include="00 Careers SQL Scripts\Disability.sql" />
+    <Content Include="00 Careers SQL Scripts\Employment.sql" />
+    <Content Include="00 Careers SQL Scripts\HigherEducation.sql" />
+    <Content Include="00 Careers SQL Scripts\Inbox.sql" />
+    <Content Include="00 Careers SQL Scripts\KeyWord.sql" />
+    <Content Include="00 Careers SQL Scripts\Language.sql" />
+    <Content Include="00 Careers SQL Scripts\License.sql" />
+    <Content Include="00 Careers SQL Scripts\Log.sql" />
+    <Content Include="00 Careers SQL Scripts\supportDoc.sql" />
+    <Content Include="00 Careers SQL Scripts\User.sql" />
+    <Content Include="00 Careers SQL Scripts\Vacancy.sql" />
+    <Content Include="00 Careers SQL Scripts\VacancyKillerQuestion.sql" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -148,7 +167,9 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="SERVICES\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

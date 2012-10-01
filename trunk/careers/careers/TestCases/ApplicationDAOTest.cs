@@ -129,10 +129,10 @@ namespace TestCases
 
 
             /*Delete*/
-
+            Assert.AreEqual(app_context.removeByUserId("griddy", "1"), true);
             vac_context.removeByUserId("1");
             account_context.removeByUserId("griddy");
-            app_context.removeByUserId("griddy", "1");
+            
 
             
         }
