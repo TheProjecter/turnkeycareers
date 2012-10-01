@@ -112,6 +112,7 @@ namespace TestCases
 
             /*Delete*/
             Assert.AreEqual(key_context.isFound("Fish", "1"), true);
+            key_context.removeByUserId("Fish", "1");
             vac_context.removeByUserId("1");
         }
     }
