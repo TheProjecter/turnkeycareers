@@ -12,7 +12,7 @@ public class AccountDAO : DAO_Account_Interface
     private ModelDataContext ctx;
 	public AccountDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
     public bool isFound(string userName)

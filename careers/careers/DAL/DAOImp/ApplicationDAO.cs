@@ -12,7 +12,7 @@ public class ApplicationDAO : DAO_Application_Interface
     private ModelDataContext ctx;
     public ApplicationDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

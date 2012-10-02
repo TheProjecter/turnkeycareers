@@ -12,7 +12,7 @@ public class BasicEduDAO : DAO_BasicEdu_Interface
     private ModelDataContext ctx;
     public BasicEduDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
     public bool isFound(string userName)

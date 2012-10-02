@@ -12,7 +12,7 @@ public class BasicEduSubjectDAO : DAO_BasicEduSubject_Interface
     private ModelDataContext ctx;
     public BasicEduSubjectDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx = new ModelDataContext();// new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

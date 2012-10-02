@@ -12,7 +12,7 @@ public class InboxDAO : DAO_Inbox_Interface
     private ModelDataContext ctx;
     public InboxDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

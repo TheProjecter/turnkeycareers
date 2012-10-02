@@ -12,7 +12,7 @@ public class EmploymentDAO : DAO_Employment_Interface
     private ModelDataContext ctx;
     public EmploymentDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

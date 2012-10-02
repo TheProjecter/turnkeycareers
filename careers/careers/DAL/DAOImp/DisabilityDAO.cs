@@ -12,7 +12,7 @@ public class DisabilityDAO : DAO_Disability_Interface
     private ModelDataContext ctx;
     public DisabilityDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

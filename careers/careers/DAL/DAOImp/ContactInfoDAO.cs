@@ -12,7 +12,7 @@ public class ContactInfoDAO : DAO_ContactInfo_Interface
     private ModelDataContext ctx;
     public ContactInfoDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 
