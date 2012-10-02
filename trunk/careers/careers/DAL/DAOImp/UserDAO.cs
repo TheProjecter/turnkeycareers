@@ -12,7 +12,7 @@ public class UserDAO : DAO_User_Interface
     private ModelDataContext ctx;
     public UserDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

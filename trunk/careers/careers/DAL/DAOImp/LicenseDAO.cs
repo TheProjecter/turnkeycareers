@@ -12,7 +12,7 @@ public class LicenseDAO : DAO_License_Interface
     private ModelDataContext ctx;
     public LicenseDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
     public bool isFound(string userName)

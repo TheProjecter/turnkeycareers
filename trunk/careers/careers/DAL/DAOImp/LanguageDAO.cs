@@ -12,7 +12,7 @@ public class LanguageDAO : DAO_Language_Interface
     private ModelDataContext ctx;
     public LanguageDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

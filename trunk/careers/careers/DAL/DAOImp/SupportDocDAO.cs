@@ -13,7 +13,7 @@ public class SupportDocDAO : DAO_SupportDoc_Interface
     private ModelDataContext ctx;
     public SupportDocDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

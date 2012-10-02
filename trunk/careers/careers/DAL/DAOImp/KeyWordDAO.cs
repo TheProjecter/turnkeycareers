@@ -12,7 +12,7 @@ public class KeyWordDAO : DAO_KeyWord_Interface
     private ModelDataContext ctx;
     public KeyWordDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

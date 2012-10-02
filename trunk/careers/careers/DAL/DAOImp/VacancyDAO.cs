@@ -12,7 +12,7 @@ public class VacancyDAO : DAO_Vacancy_Interface
     private ModelDataContext ctx;
     public VacancyDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
     public bool isFound(string vacancyNumber)

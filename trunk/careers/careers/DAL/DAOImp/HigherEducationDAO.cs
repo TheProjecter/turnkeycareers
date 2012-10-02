@@ -12,7 +12,7 @@ public class HigherEducationDAO : DAO_HigherEducation_Interface
     private ModelDataContext ctx;
     public HigherEducationDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

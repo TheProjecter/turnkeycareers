@@ -12,7 +12,7 @@ public class AddressDAO : DAO_Address_Interface
     private ModelDataContext ctx;
     public AddressDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 

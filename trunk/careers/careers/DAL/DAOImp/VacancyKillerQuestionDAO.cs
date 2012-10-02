@@ -12,7 +12,7 @@ public class VacancyKillerQuestionDAO : DAO_VacancyKillerQuestion_Interface
     private ModelDataContext ctx;
     public VacancyKillerQuestionDAO()
 	{
-        ctx = ModelFactory.getModelInstance();
+        ctx =  new ModelDataContext();//ModelFactory.getModelInstance();
 	}
 
 
