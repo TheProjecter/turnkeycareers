@@ -109,7 +109,7 @@ namespace TestCases
             user.surname = "Pretorious";
             user.userName = "griddy";
 
-          //  user_context.presist(user);
+            user_context.presist(user);
             //Assert.AreEqual(user.race, user_context.find("griddy","8630302930").race);
 
             ///*Update*/
