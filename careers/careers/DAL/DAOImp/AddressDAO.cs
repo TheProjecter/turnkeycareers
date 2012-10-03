@@ -68,6 +68,8 @@ public class AddressDAO : DAO_Address_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -115,6 +117,8 @@ public class AddressDAO : DAO_Address_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -130,8 +134,8 @@ public class AddressDAO : DAO_Address_Interface
             model.Address obj = (Address)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.addressType = entity.addressType;
+            obj.userName = entity.userName;
+            obj.addressType = entity.addressType;
             obj.unitNumber = entity.unitNumber;
             obj.street = entity.street;
             obj.suburb = entity.suburb;
@@ -146,7 +150,9 @@ public class AddressDAO : DAO_Address_Interface
         {
             model.Log log = new Log();
             log.message = "Address Merge: " + " ["+entity.userName+" , "+entity.addressType+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
+
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             ctx.SubmitChanges();
 
             return false;

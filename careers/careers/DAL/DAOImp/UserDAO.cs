@@ -78,6 +78,8 @@ public class UserDAO : DAO_User_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -143,6 +145,8 @@ public class UserDAO : DAO_User_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -158,8 +162,8 @@ public class UserDAO : DAO_User_Interface
             model.User obj = (User)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.id = entity.id;
+            obj.userName = entity.userName;
+            obj.id = entity.id;
             obj.fullName = entity.fullName;
             obj.nickName = entity.nickName;
             obj.gender = entity.gender;
@@ -183,9 +187,10 @@ public class UserDAO : DAO_User_Interface
         {
             model.Log log = new Log();
             log.message = "User Merge: " + " ["+entity.userName+" , "+entity.id+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

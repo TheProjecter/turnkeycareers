@@ -105,6 +105,8 @@ public class VacancyDAO : DAO_Vacancy_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -138,6 +140,8 @@ public class VacancyDAO : DAO_Vacancy_Interface
           }
           catch (Exception)
           {
+              ctx.Dispose();
+              ctx = new ModelDataContext();
               return false;
           }
     }
@@ -164,6 +168,8 @@ public class VacancyDAO : DAO_Vacancy_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

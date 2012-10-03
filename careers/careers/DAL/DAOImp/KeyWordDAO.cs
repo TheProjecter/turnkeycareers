@@ -64,6 +64,8 @@ public class KeyWordDAO : DAO_KeyWord_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -99,6 +101,8 @@ public class KeyWordDAO : DAO_KeyWord_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -124,7 +128,9 @@ public class KeyWordDAO : DAO_KeyWord_Interface
         {
             model.Log log = new Log();
             log.message = "KeyWord Merge: " + " [" + entity.word + " , " + entity.vacancyNumber + "] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
+
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             ctx.SubmitChanges();
 
             return false;

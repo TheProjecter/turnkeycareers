@@ -64,6 +64,8 @@ public class ContactInfoDAO : DAO_ContactInfo_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -101,6 +103,8 @@ public class ContactInfoDAO : DAO_ContactInfo_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -116,8 +120,8 @@ public class ContactInfoDAO : DAO_ContactInfo_Interface
             model.ContactInfo obj = (ContactInfo)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.contactType = entity.contactType;
+            obj.userName = entity.userName;
+            obj.contactType = entity.contactType;
             obj.data = entity.data;
 
             ctx.SubmitChanges();
@@ -127,7 +131,9 @@ public class ContactInfoDAO : DAO_ContactInfo_Interface
         {
             model.Log log = new Log();
             log.message = "ContactInfo Merge: " + " ["+entity.userName+" , "+entity.contactType+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
+
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             ctx.SubmitChanges();
 
             return false;

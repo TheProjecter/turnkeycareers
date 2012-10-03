@@ -66,6 +66,8 @@ public class InboxDAO : DAO_Inbox_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -107,6 +109,8 @@ public class InboxDAO : DAO_Inbox_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -122,8 +126,8 @@ public class InboxDAO : DAO_Inbox_Interface
             model.Inbox obj = (Inbox)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.messageId = entity.messageId;
+            obj.userName = entity.userName;
+            obj.messageId = entity.messageId;
             obj.date = entity.date;
             obj.unread = entity.unread;
             obj.message = entity.message;
@@ -135,9 +139,10 @@ public class InboxDAO : DAO_Inbox_Interface
         {
             model.Log log = new Log();
             log.message = "Inbox Merge: " + " ["+entity.userName+" , "+entity.messageId+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

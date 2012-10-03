@@ -72,6 +72,8 @@ public class HigherEducationDAO : DAO_HigherEducation_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -124,6 +126,8 @@ public class HigherEducationDAO : DAO_HigherEducation_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -139,8 +143,8 @@ public class HigherEducationDAO : DAO_HigherEducation_Interface
             model.HigherEducation obj = (HigherEducation)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.major = entity.major;
+            obj.userName = entity.userName;
+            obj.major = entity.major;
             obj.institution = entity.institution;
             obj.town = entity.town;
             obj.province = entity.province;
@@ -158,9 +162,10 @@ public class HigherEducationDAO : DAO_HigherEducation_Interface
         {
             model.Log log = new Log();
             log.message = "HigherEducation Merge: " + " ["+entity.userName+" , "+entity.major+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

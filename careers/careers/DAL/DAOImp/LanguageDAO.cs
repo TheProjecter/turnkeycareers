@@ -66,6 +66,8 @@ public class LanguageDAO : DAO_Language_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -107,6 +109,8 @@ public class LanguageDAO : DAO_Language_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -122,8 +126,8 @@ public class LanguageDAO : DAO_Language_Interface
             model.Language obj = (Language)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.languageName = entity.languageName;
+            obj.userName = entity.userName;
+            obj.languageName = entity.languageName;
             obj.reads = entity.reads;
             obj.write = entity.write;
             obj.speak = entity.speak;
@@ -135,9 +139,10 @@ public class LanguageDAO : DAO_Language_Interface
         {
             model.Log log = new Log();
             log.message = "Language Merge: " + " ["+entity.userName+" , "+entity.languageName+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

@@ -74,6 +74,8 @@ public class LicenseDAO : DAO_License_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -97,6 +99,8 @@ public class LicenseDAO : DAO_License_Interface
           }
           catch (Exception)
           {
+              ctx.Dispose();
+              ctx = new ModelDataContext();
               return false;
           }
     }
@@ -123,6 +127,8 @@ public class LicenseDAO : DAO_License_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

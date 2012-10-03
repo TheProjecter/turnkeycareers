@@ -64,6 +64,8 @@ public class DisabilityDAO : DAO_Disability_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -101,6 +103,8 @@ public class DisabilityDAO : DAO_Disability_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -116,8 +120,8 @@ public class DisabilityDAO : DAO_Disability_Interface
             model.Disability obj = (Disability)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.disabilityType = entity.disabilityType;
+            obj.userName = entity.userName;
+            obj.disabilityType = entity.disabilityType;
             obj.description = entity.description;
 
             ctx.SubmitChanges();
@@ -127,9 +131,10 @@ public class DisabilityDAO : DAO_Disability_Interface
         {
             model.Log log = new Log();
             log.message = "Disability Merge: " + " ["+entity.userName+" , "+entity.disabilityType+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

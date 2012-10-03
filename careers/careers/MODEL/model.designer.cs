@@ -86,8 +86,8 @@ namespace model
     partial void DeleteUser(User instance);
     #endregion
 		
-		public ModelDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["careersConnectionString"].ConnectionString, mappingSource)
+		public ModelDataContext() :
+        base(global::System.Configuration.ConfigurationManager.ConnectionStrings["careersDbConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}

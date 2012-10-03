@@ -86,6 +86,8 @@ public class BasicEduDAO : DAO_BasicEdu_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -113,6 +115,8 @@ public class BasicEduDAO : DAO_BasicEdu_Interface
           }
           catch (Exception)
           {
+              ctx.Dispose();
+              ctx = new ModelDataContext();
               return false;
           }
     }
@@ -139,6 +143,8 @@ public class BasicEduDAO : DAO_BasicEdu_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="careers" Class="ModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=careers;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="careersConnectionString1" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="careersDb" Class="ModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;AttachDbFilename=C:\careers\careers\careers\DATA\careersDb.mdf;Initial Catalog=careersDb;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="careersDbConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Address" Member="Addresses">
     <Type Name="Address">
       <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -175,16 +175,8 @@
       <Association Name="Account_License" Member="License" ThisKey="userName" OtherKey="userName" Type="License" Cardinality="One" />
       <Association Name="Account_Application" Member="Applications" ThisKey="userName" OtherKey="userName" Type="Application" />
       <Association Name="Account_supportDoc" Member="supportDocs" ThisKey="userName" OtherKey="userName" Type="supportDoc" />
-      <Association Name="Account_ContactInfo" Member="ContactInfos" ThisKey="userName" OtherKey="userName" Type="ContactInfo" />
       <Association Name="Account_User" Member="Users" ThisKey="userName" OtherKey="userName" Type="User" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ContactInfo" Member="ContactInfos">
-    <Type Name="ContactInfo">
-      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="contactType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="data" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="Account_ContactInfo" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+      <Association Name="Account_ContactInfo" Member="ContactInfos" ThisKey="userName" OtherKey="userName" Type="ContactInfo" />
     </Type>
   </Table>
   <Table Name="dbo.[User]" Member="Users">
@@ -208,6 +200,14 @@
       <Column Name="employed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="employmentHistory" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Association Name="Account_User" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactInfo" Member="ContactInfos">
+    <Type Name="ContactInfo">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="data" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_ContactInfo" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

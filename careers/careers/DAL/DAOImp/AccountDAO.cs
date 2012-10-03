@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using model;
+using System.Data.Linq;
 
 /// <summary>
 /// Summary description for AccountDAO
@@ -75,11 +76,14 @@ public class AccountDAO : DAO_Account_Interface
             obj.accountType = entityDTO.accountType;
 
             ctx.Accounts.InsertOnSubmit(obj);
-            ctx.SubmitChanges();
+
+            ctx.SubmitChanges(ConflictMode.ContinueOnConflict);
             return true;
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -105,6 +109,8 @@ public class AccountDAO : DAO_Account_Interface
           }
           catch (Exception)
           {
+              ctx.Dispose();
+              ctx = new ModelDataContext();
               return false;
           }
     }
@@ -131,6 +137,8 @@ public class AccountDAO : DAO_Account_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
