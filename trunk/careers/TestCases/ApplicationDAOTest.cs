@@ -72,7 +72,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void ApplicationDAO_Test()
         {
@@ -129,10 +129,9 @@ namespace TestCases
 
 
             /*Delete*/
-
-            vac_context.removeByUserId("1");
-            account_context.removeByUserId("griddy");
-            app_context.removeByUserId("griddy", "1");
+            Assert.AreEqual(app_context.removeByUserId("griddy", "1"), true);
+            Assert.AreEqual(vac_context.removeByUserId("1"), true);
+            Assert.AreEqual(account_context.removeByUserId("griddy"), true);
 
             
         }

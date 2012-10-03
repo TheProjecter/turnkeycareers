@@ -74,6 +74,8 @@ public class EmploymentDAO : DAO_Employment_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -133,6 +135,8 @@ public class EmploymentDAO : DAO_Employment_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -148,8 +152,8 @@ public class EmploymentDAO : DAO_Employment_Interface
             model.Employment obj = (Employment)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.startDate = entity.startDate;
+            obj.userName = entity.userName;
+            obj.startDate = entity.startDate;
             obj.title = entity.title;
             obj.company = entity.company;
             obj.industry = entity.industry;
@@ -170,9 +174,10 @@ public class EmploymentDAO : DAO_Employment_Interface
         {
             model.Log log = new Log();
             log.message = "Employment Merge: " + " ["+entity.userName+" , "+entity.startDate+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

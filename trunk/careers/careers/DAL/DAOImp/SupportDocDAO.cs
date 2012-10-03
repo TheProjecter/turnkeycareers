@@ -66,6 +66,8 @@ public class SupportDocDAO : DAO_SupportDoc_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -105,6 +107,8 @@ public class SupportDocDAO : DAO_SupportDoc_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -120,8 +124,8 @@ public class SupportDocDAO : DAO_SupportDoc_Interface
             model.supportDoc obj = (supportDoc)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.title = entity.title;
+            obj.userName = entity.userName;
+            obj.title = entity.title;
             obj.description = entity.description;
             obj.content = new System.Data.Linq.Binary(entity.content);//Array of bytes to Linq.Binary
 
@@ -132,9 +136,10 @@ public class SupportDocDAO : DAO_SupportDoc_Interface
         {
             model.Log log = new Log();
             log.message = "supportDoc Merge: " + " ["+entity.userName+" , "+entity.title+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

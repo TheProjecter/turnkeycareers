@@ -64,6 +64,8 @@ public class ApplicationDAO : DAO_Application_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -101,6 +103,8 @@ public class ApplicationDAO : DAO_Application_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -127,7 +131,9 @@ public class ApplicationDAO : DAO_Application_Interface
         {
             model.Log log = new Log();
             log.message = "Application Merge: " + " [" + entity.userName + " , " + entity.vacancyNumber + "] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
+
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             ctx.SubmitChanges();
 
             return false;

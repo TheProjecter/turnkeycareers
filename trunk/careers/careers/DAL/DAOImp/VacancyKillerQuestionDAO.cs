@@ -64,6 +64,8 @@ public class VacancyKillerQuestionDAO : DAO_VacancyKillerQuestion_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -101,6 +103,8 @@ public class VacancyKillerQuestionDAO : DAO_VacancyKillerQuestion_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -127,9 +131,10 @@ public class VacancyKillerQuestionDAO : DAO_VacancyKillerQuestion_Interface
         {
             model.Log log = new Log();
             log.message = "VacancyKillerQuestion Merge: " + " [" + entity.question + " , " + entity.vacancyNumber + "] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
             ctx.SubmitChanges();
 
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }

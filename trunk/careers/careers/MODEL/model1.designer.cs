@@ -22,7 +22,7 @@ namespace careers.MODEL
 	using System;
 	
 	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="careers")]
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="careersDb")]
 	public partial class ModelDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -78,16 +78,16 @@ namespace careers.MODEL
     partial void InsertAccount(Account instance);
     partial void UpdateAccount(Account instance);
     partial void DeleteAccount(Account instance);
-    partial void InsertContactInfo(ContactInfo instance);
-    partial void UpdateContactInfo(ContactInfo instance);
-    partial void DeleteContactInfo(ContactInfo instance);
     partial void InsertUser(User instance);
     partial void UpdateUser(User instance);
     partial void DeleteUser(User instance);
+    partial void InsertContactInfo(ContactInfo instance);
+    partial void UpdateContactInfo(ContactInfo instance);
+    partial void DeleteContactInfo(ContactInfo instance);
     #endregion
 		
 		public ModelDataContext() : 
-				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["careersConnectionString1"].ConnectionString, mappingSource)
+				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["careersDbConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -244,19 +244,19 @@ namespace careers.MODEL
 			}
 		}
 		
-		public System.Data.Linq.Table<ContactInfo> ContactInfos
-		{
-			get
-			{
-				return this.GetTable<ContactInfo>();
-			}
-		}
-		
 		public System.Data.Linq.Table<User> Users
 		{
 			get
 			{
 				return this.GetTable<User>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ContactInfo> ContactInfos
+		{
+			get
+			{
+				return this.GetTable<ContactInfo>();
 			}
 		}
 	}
@@ -3495,9 +3495,9 @@ namespace careers.MODEL
 		
 		private EntitySet<supportDoc> _supportDocs;
 		
-		private EntitySet<ContactInfo> _ContactInfos;
-		
 		private EntitySet<User> _Users;
+		
+		private EntitySet<ContactInfo> _ContactInfos;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -3525,8 +3525,8 @@ namespace careers.MODEL
 			this._License = default(EntityRef<License>);
 			this._Applications = new EntitySet<Application>(new Action<Application>(this.attach_Applications), new Action<Application>(this.detach_Applications));
 			this._supportDocs = new EntitySet<supportDoc>(new Action<supportDoc>(this.attach_supportDocs), new Action<supportDoc>(this.detach_supportDocs));
-			this._ContactInfos = new EntitySet<ContactInfo>(new Action<ContactInfo>(this.attach_ContactInfos), new Action<ContactInfo>(this.detach_ContactInfos));
 			this._Users = new EntitySet<User>(new Action<User>(this.attach_Users), new Action<User>(this.detach_Users));
+			this._ContactInfos = new EntitySet<ContactInfo>(new Action<ContactInfo>(this.attach_ContactInfos), new Action<ContactInfo>(this.detach_ContactInfos));
 			OnCreated();
 		}
 		
@@ -3772,19 +3772,6 @@ namespace careers.MODEL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_ContactInfo", Storage="_ContactInfos", ThisKey="userName", OtherKey="userName")]
-		public EntitySet<ContactInfo> ContactInfos
-		{
-			get
-			{
-				return this._ContactInfos;
-			}
-			set
-			{
-				this._ContactInfos.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_User", Storage="_Users", ThisKey="userName", OtherKey="userName")]
 		public EntitySet<User> Users
 		{
@@ -3795,6 +3782,19 @@ namespace careers.MODEL
 			set
 			{
 				this._Users.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_ContactInfo", Storage="_ContactInfos", ThisKey="userName", OtherKey="userName")]
+		public EntitySet<ContactInfo> ContactInfos
+		{
+			get
+			{
+				return this._ContactInfos;
+			}
+			set
+			{
+				this._ContactInfos.Assign(value);
 			}
 		}
 		
@@ -3914,18 +3914,6 @@ namespace careers.MODEL
 			entity.Account = null;
 		}
 		
-		private void attach_ContactInfos(ContactInfo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = this;
-		}
-		
-		private void detach_ContactInfos(ContactInfo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Account = null;
-		}
-		
 		private void attach_Users(User entity)
 		{
 			this.SendPropertyChanging();
@@ -3937,156 +3925,17 @@ namespace careers.MODEL
 			this.SendPropertyChanging();
 			entity.Account = null;
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ContactInfo")]
-	public partial class ContactInfo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
 		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _userName;
-		
-		private string _contactType;
-		
-		private string _data;
-		
-		private EntityRef<Account> _Account;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnuserNameChanging(string value);
-    partial void OnuserNameChanged();
-    partial void OncontactTypeChanging(string value);
-    partial void OncontactTypeChanged();
-    partial void OndataChanging(string value);
-    partial void OndataChanged();
-    #endregion
-		
-		public ContactInfo()
+		private void attach_ContactInfos(ContactInfo entity)
 		{
-			this._Account = default(EntityRef<Account>);
-			OnCreated();
+			this.SendPropertyChanging();
+			entity.Account = this;
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_userName", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string userName
+		private void detach_ContactInfos(ContactInfo entity)
 		{
-			get
-			{
-				return this._userName;
-			}
-			set
-			{
-				if ((this._userName != value))
-				{
-					if (this._Account.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnuserNameChanging(value);
-					this.SendPropertyChanging();
-					this._userName = value;
-					this.SendPropertyChanged("userName");
-					this.OnuserNameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_contactType", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string contactType
-		{
-			get
-			{
-				return this._contactType;
-			}
-			set
-			{
-				if ((this._contactType != value))
-				{
-					this.OncontactTypeChanging(value);
-					this.SendPropertyChanging();
-					this._contactType = value;
-					this.SendPropertyChanged("contactType");
-					this.OncontactTypeChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_data", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-		public string data
-		{
-			get
-			{
-				return this._data;
-			}
-			set
-			{
-				if ((this._data != value))
-				{
-					this.OndataChanging(value);
-					this.SendPropertyChanging();
-					this._data = value;
-					this.SendPropertyChanged("data");
-					this.OndataChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_ContactInfo", Storage="_Account", ThisKey="userName", OtherKey="userName", IsForeignKey=true)]
-		public Account Account
-		{
-			get
-			{
-				return this._Account.Entity;
-			}
-			set
-			{
-				Account previousValue = this._Account.Entity;
-				if (((previousValue != value) 
-							|| (this._Account.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Account.Entity = null;
-						previousValue.ContactInfos.Remove(this);
-					}
-					this._Account.Entity = value;
-					if ((value != null))
-					{
-						value.ContactInfos.Add(this);
-						this._userName = value.userName;
-					}
-					else
-					{
-						this._userName = default(string);
-					}
-					this.SendPropertyChanged("Account");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
+			this.SendPropertyChanging();
+			entity.Account = null;
 		}
 	}
 	
@@ -4569,6 +4418,157 @@ namespace careers.MODEL
 					if ((value != null))
 					{
 						value.Users.Add(this);
+						this._userName = value.userName;
+					}
+					else
+					{
+						this._userName = default(string);
+					}
+					this.SendPropertyChanged("Account");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ContactInfo")]
+	public partial class ContactInfo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _userName;
+		
+		private string _contactType;
+		
+		private string _data;
+		
+		private EntityRef<Account> _Account;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnuserNameChanging(string value);
+    partial void OnuserNameChanged();
+    partial void OncontactTypeChanging(string value);
+    partial void OncontactTypeChanged();
+    partial void OndataChanging(string value);
+    partial void OndataChanged();
+    #endregion
+		
+		public ContactInfo()
+		{
+			this._Account = default(EntityRef<Account>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_userName", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string userName
+		{
+			get
+			{
+				return this._userName;
+			}
+			set
+			{
+				if ((this._userName != value))
+				{
+					if (this._Account.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnuserNameChanging(value);
+					this.SendPropertyChanging();
+					this._userName = value;
+					this.SendPropertyChanged("userName");
+					this.OnuserNameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_contactType", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string contactType
+		{
+			get
+			{
+				return this._contactType;
+			}
+			set
+			{
+				if ((this._contactType != value))
+				{
+					this.OncontactTypeChanging(value);
+					this.SendPropertyChanging();
+					this._contactType = value;
+					this.SendPropertyChanged("contactType");
+					this.OncontactTypeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_data", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
+		public string data
+		{
+			get
+			{
+				return this._data;
+			}
+			set
+			{
+				if ((this._data != value))
+				{
+					this.OndataChanging(value);
+					this.SendPropertyChanging();
+					this._data = value;
+					this.SendPropertyChanged("data");
+					this.OndataChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Account_ContactInfo", Storage="_Account", ThisKey="userName", OtherKey="userName", IsForeignKey=true)]
+		public Account Account
+		{
+			get
+			{
+				return this._Account.Entity;
+			}
+			set
+			{
+				Account previousValue = this._Account.Entity;
+				if (((previousValue != value) 
+							|| (this._Account.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Account.Entity = null;
+						previousValue.ContactInfos.Remove(this);
+					}
+					this._Account.Entity = value;
+					if ((value != null))
+					{
+						value.ContactInfos.Add(this);
 						this._userName = value.userName;
 					}
 					else

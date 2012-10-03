@@ -18,13 +18,24 @@ namespace careers
         {
              AccountDAO context = new AccountDAO();
             AccountDTO acc = new AccountDTO();
-
-            acc.userName = "skippy";
+            if (!context.isFound("skippy"))
+                Label1.Text = "Not found";
+            else
+                Label1.Text = "Found";
+            acc.userName = null;
             acc.password = "nissan";
             acc.accountType = "admin";
             acc.status = "active";
-
+       
             context.presist(acc);
+        
+
+            acc.userName = "piet";
+          
+            if( !   context.presist(acc) )
+                Label2.Text = "Error";
+            else
+                Label2.Text = "OK";
 
             //if(context.isFound("skippy"))
             //    text = "found";

@@ -72,7 +72,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void SupportDocDAO_Test()
         {

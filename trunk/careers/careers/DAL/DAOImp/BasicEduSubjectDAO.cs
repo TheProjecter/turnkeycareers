@@ -63,6 +63,8 @@ public class BasicEduSubjectDAO : DAO_BasicEduSubject_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -100,6 +102,8 @@ public class BasicEduSubjectDAO : DAO_BasicEduSubject_Interface
         }
         catch (Exception)
         {
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             return false;
         }
     }
@@ -115,8 +119,8 @@ public class BasicEduSubjectDAO : DAO_BasicEduSubject_Interface
             model.BasicEduSubject obj = (BasicEduSubject)addObj;
 
             /*Update*/
-            //obj.userName = entity.userName;
-            //obj.subjectName = entity.subjectName;
+            obj.userName = entity.userName;
+            obj.subjectName = entity.subjectName;
             obj.subjectDescription = entity.subjectDescription;
 
             ctx.SubmitChanges();
@@ -126,7 +130,9 @@ public class BasicEduSubjectDAO : DAO_BasicEduSubject_Interface
         {
             model.Log log = new Log();
             log.message = "BasicEduSubject Merge: " + " ["+entity.userName+" , "+entity.subjectName+"] " + e.Message;
-            ctx.Logs.InsertOnSubmit(log);
+
+            ctx.Dispose();
+            ctx = new ModelDataContext();
             ctx.SubmitChanges();
 
             return false;
