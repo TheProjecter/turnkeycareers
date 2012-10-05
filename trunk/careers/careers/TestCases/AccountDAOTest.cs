@@ -1,4 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*******************************
+Developer: WA Pretoruis
+Student  : 205093280
+*******************************/
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 
@@ -23,6 +27,7 @@ namespace TestCases
         ///</summary>
         public TestContext TestContext
         {
+       
             get
             {
                 return testContextInstance;
@@ -63,7 +68,6 @@ namespace TestCases
         //
         #endregion
 
-
         /// <summary>
         ///A test for isFound
         ///</summary>
@@ -72,7 +76,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void AccountDAO_Test()
         {
@@ -85,27 +89,24 @@ namespace TestCases
             acc.accountType = "administrator";
             acc.status = "active";
 
-            target.presist(acc);
-
             string userName = "griddy"; // TODO: Initialize to an appropriate value
-            bool expected = true; // TODO: Initialize to an appropriate value
-            bool actual;
-            actual = target.isFound(userName);
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(false, target.isFound(userName));
+            Assert.AreEqual(true,target.presist(acc));
+           
+                                
+            Assert.AreEqual(true, target.isFound(userName));//
 
             /*Update*/
             acc.status = "inactive";
             target.merge(acc);
+
 
             string expectedUpdate = "inactive";
             AccountDTO upd =  target.find("griddy");
             Assert.AreEqual(expectedUpdate, upd.status);
 
             /*Delete*/
-            target.removeByUserId("griddy");
-            bool expectedDelete = false;
-            bool actualDelete = target.isFound("griddy");
-            Assert.AreEqual(expectedDelete, actualDelete);
+            Assert.AreEqual(false, target.removeByUserId("griddy"));
 
 
         }

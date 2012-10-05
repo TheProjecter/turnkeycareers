@@ -47,6 +47,10 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web" />
@@ -67,6 +71,7 @@
     <Compile Include="AccountDAOTest.cs" />
     <Compile Include="AddressDAOTest.cs" />
     <Compile Include="ApplicationDAOTest.cs" />
+    <Compile Include="ApplicationSearchServiceTest.cs" />
     <Compile Include="BasicEduDAOTest.cs" />
     <Compile Include="BasicEduSubjectDAOTest.cs" />
     <Compile Include="ContactInfoDAOTest.cs" />
@@ -74,14 +79,26 @@
     <Compile Include="EmploymentDAOTest.cs" />
     <Compile Include="HigherEducationDAOTest.cs" />
     <Compile Include="InboxDAOTest.cs" />
+    <Compile Include="InboxMessageSearchServiceTest.cs" />
+    <Compile Include="InboxServiceTest.cs" />
     <Compile Include="KeyWordDAOTest.cs" />
-    <Compile Include="LanguageDAOTest.cs" />
     <Compile Include="LicenseDAOTest.cs" />
+    <Compile Include="MailServiceTest\mailServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecurityServiceTest.cs" />
     <Compile Include="SupportDocDAOTest.cs" />
     <Compile Include="UserDAOTest.cs" />
+    <Compile Include="UserServiceTest.cs" />
     <Compile Include="VacancyDAOTest.cs" />
     <Compile Include="VacancyKillerQuestionDAOTest.cs" />
+    <Compile Include="VacancyTests\ExpiredVacanciesTest.cs" />
+    <Compile Include="VacancyTests\FindVacanciesByRecruiterTest.cs" />
+    <Compile Include="VacancyTests\FindVacanciesBySiteTest.cs" />
+    <Compile Include="VacancyTests\FindVacancyByManagerTest.cs" />
+    <Compile Include="VacancyTests\FindVacancyByTitleTest.cs" />
+    <Compile Include="VacancyTests\LiveVacanciesTest.cs" />
+    <Compile Include="VacancyTests\VacancyByDepartmentTest.cs" />
+    <Compile Include="VacancyTests\VacancyStatusTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\careers\careers.csproj">

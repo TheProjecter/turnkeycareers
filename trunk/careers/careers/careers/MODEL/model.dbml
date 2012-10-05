@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="careersDb" Class="modelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;AttachDbFilename=C:\careers\careers\DATA\careersDb.mdf;Initial Catalog=careersDb;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="careersDbConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="accountType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Address" Member="Addresses" ThisKey="userName" OtherKey="userName" Type="Address" />
+      <Association Name="Account_Application" Member="Applications" ThisKey="userName" OtherKey="userName" Type="Application" />
+      <Association Name="Account_BasicEdu" Member="BasicEdu" ThisKey="userName" OtherKey="userName" Type="BasicEdu" Cardinality="One" />
+      <Association Name="Account_ContactInfo" Member="ContactInfos" ThisKey="userName" OtherKey="userName" Type="ContactInfo" />
+      <Association Name="Account_Disability" Member="Disabilities" ThisKey="userName" OtherKey="userName" Type="Disability" />
+      <Association Name="Account_Employment" Member="Employments" ThisKey="userName" OtherKey="userName" Type="Employment" />
+      <Association Name="Account_HigherEducation" Member="HigherEducations" ThisKey="userName" OtherKey="userName" Type="HigherEducation" />
+      <Association Name="Account_Inbox" Member="Inboxes" ThisKey="userName" OtherKey="userName" Type="Inbox" />
+      <Association Name="Account_Language" Member="Languages" ThisKey="userName" OtherKey="userName" Type="Language" />
+      <Association Name="Account_License" Member="License" ThisKey="userName" OtherKey="userName" Type="License" Cardinality="One" />
+      <Association Name="Account_supportDoc" Member="supportDocs" ThisKey="userName" OtherKey="userName" Type="supportDoc" />
+      <Association Name="Account_User" Member="Users" ThisKey="userName" OtherKey="userName" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Address" Member="Addresses">
+    <Type Name="Address">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="unitNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="street" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="suburb" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Address" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Application" Member="Applications">
+    <Type Name="Application">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Application" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+      <Association Name="Vacancy_Application" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BasicEdu" Member="BasicEdus">
+    <Type Name="BasicEdu">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="school" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="levelCompleted" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="BasicEdu_BasicEduSubject" Member="BasicEduSubjects" ThisKey="userName" OtherKey="userName" Type="BasicEduSubject" />
+      <Association Name="Account_BasicEdu" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BasicEduSubject" Member="BasicEduSubjects">
+    <Type Name="BasicEduSubject">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subjectName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="subjectDescription" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="BasicEdu_BasicEduSubject" Member="BasicEdu" ThisKey="userName" OtherKey="userName" Type="BasicEdu" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContactInfo" Member="ContactInfos">
+    <Type Name="ContactInfo">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="contactType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="data" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_ContactInfo" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Disability" Member="Disabilities">
+    <Type Name="Disability">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="disabilityType" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Disability" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employment" Member="Employments">
+    <Type Name="Employment">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="company" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="industry" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="empType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="currentEmployer" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gross" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="Date NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="endDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="responsibilities" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Employment" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HigherEducation" Member="HigherEducations">
+    <Type Name="HigherEducation">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="institution" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="town" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="province" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="country" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="educationType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="major" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="industry" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="length" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nqf" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_HigherEducation" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inbox" Member="Inboxes">
+    <Type Name="Inbox">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="messageId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="unread" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Inbox" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KeyWord" Member="KeyWords">
+    <Type Name="KeyWord">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="word" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Vacancy_KeyWord" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Language" Member="Languages">
+    <Type Name="Language">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="languageName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="reads" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="write" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="speak" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_Language" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.License" Member="Licenses">
+    <Type Name="License">
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Account_License" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[Log]" Member="Logs">
+    <Type Name="Log">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="message" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.supportDoc" Member="supportDocs">
+    <Type Name="supportDoc">
+      <Column Name="title" Type="System.String" DbType="NVarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX) NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Association Name="Account_supportDoc" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="id" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fullname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nickName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="surname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="race" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="disabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="citizenship" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="idType" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="license" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="basicEducation" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="higherEducaton" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="language" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="residentialAddress" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="postalAddress" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="employed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="employmentHistory" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Account_User" Member="Account" ThisKey="userName" OtherKey="userName" Type="Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vacancy" Member="Vacancies">
+    <Type Name="Vacancy">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="viewStatus" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="department" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="site" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="startDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="endDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="viewCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="manager" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="recruiter" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vacancy_Application" Member="Applications" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Application" />
+      <Association Name="Vacancy_KeyWord" Member="KeyWords" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="KeyWord" />
+      <Association Name="Vacancy_VacancyKillerQuestion" Member="VacancyKillerQuestions" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="VacancyKillerQuestion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VacancyKillerQuestion" Member="VacancyKillerQuestions">
+    <Type Name="VacancyKillerQuestion">
+      <Column Name="vacancyNumber" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="question" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="answer" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Vacancy_VacancyKillerQuestion" Member="Vacancy" ThisKey="vacancyNumber" OtherKey="vacancyNumber" Type="Vacancy" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.deleteAccount" Method="deleteAccount">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertAccount" Method="insertAccount">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="accountType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateAccount" Method="updateAccount">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="password" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="accountType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteAddress" Method="deleteAddress">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="addressType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteApplication" Method="deleteApplication">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteBasicEdu" Method="deleteBasicEdu">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteBasicEduSubject" Method="deleteBasicEduSubject">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="subjectName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteContactInfo" Method="deleteContactInfo">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="contactType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteDisability" Method="deleteDisability">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="disabilityType" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteEmployment" Method="deleteEmployment">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteHigherEducation" Method="deleteHigherEducation">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="major" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteKeyWords" Method="deleteKeyWords">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="word" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteLanguage" Method="deleteLanguage">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="languageName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteLicense" Method="deleteLicense">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteSupportDoc" Method="deleteSupportDoc">
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteUser" Method="deleteUser">
+    <Parameter Name="id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteVacancy" Method="deleteVacancy">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteVacancyKillerQuestion" Method="deleteVacancyKillerQuestion">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="question" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertAddress" Method="insertAddress">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="addressType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="unitNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="street" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="suburb" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertApplication" Method="insertApplication">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertBasicEdu" Method="insertBasicEdu">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="school" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="levelCompleted" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertBasicEduSubject" Method="insertBasicEduSubject">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="subjectName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="subjectDescription" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertContactInfo" Method="insertContactInfo">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="contactType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="data" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertDisability" Method="insertDisability">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="disabilityType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertEmployment" Method="insertEmployment">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="company" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="industry" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="empType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="currentEmployer" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gross" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="responsibilities" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertHigherEducation" Method="insertHigherEducation">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="institution" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="educationType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="major" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="industry" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="length" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nqf" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertInbox" Method="insertInbox">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="messageId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="unread" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="message" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertKeyWord" Method="insertKeyWord">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="word" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertLanguage" Method="insertLanguage">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="languageName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="reads" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="write" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="speak" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertLicense" Method="insertLicense">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="type" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertSupportDoc" Method="insertSupportDoc">
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="content" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertUser" Method="insertUser">
+    <Parameter Name="id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="fullname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nickName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="surname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="race" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="disabled" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="citizenship" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="idType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="license" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="basicEducation" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="higherEducaton" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="language" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="residentialAddress" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="postalAddress" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="employed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="employmentHistory" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertVacancy" Method="insertVacancy">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="viewStatus" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="department" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="site" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="viewCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="manager" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="recruiter" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.insertVacancyKillerQuestion" Method="insertVacancyKillerQuestion">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="question" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="answer" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateAddress" Method="updateAddress">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="addressType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="unitNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="street" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="suburb" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateApplication" Method="updateApplication">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateBasicEdu" Method="updateBasicEdu">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="school" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="levelCompleted" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateBasicEduSubject" Method="updateBasicEduSubject">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="subjectName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="subjectDescription" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateContactInfo" Method="updateContactInfo">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="contactType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="data" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateDisability" Method="updateDisability">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="disabilityType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateEmployment" Method="updateEmployment">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="company" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="industry" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="empType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="currentEmployer" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gross" Type="System.Decimal" DbType="Money" />
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="responsibilities" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateHigherEducation" Method="updateHigherEducation">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="institution" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="town" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="province" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="country" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="educationType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="major" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="industry" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="length" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nqf" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateInbox" Method="updateInbox">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="messageId" Type="System.Int32" DbType="Int" />
+    <Parameter Name="date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="unread" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="message" Type="System.String" DbType="NVarChar(100)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateLanguage" Method="updateLanguage">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="languageName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="reads" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="write" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="speak" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateSupportDoc" Method="updateSupportDoc">
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="content" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateUser" Method="updateUser">
+    <Parameter Name="id" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="fullname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="nickName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="surname" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="race" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="disabled" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="citizenship" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="idType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="license" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="basicEducation" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="higherEducaton" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="language" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="residentialAddress" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="postalAddress" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="employed" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="employmentHistory" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateVacancy" Method="updateVacancy">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="viewStatus" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="title" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="description" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="department" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="site" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="startDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="endDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="viewCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="status" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="manager" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="recruiter" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.updateVacancyKillerQuestion" Method="updateVacancyKillerQuestion">
+    <Parameter Name="vacancyNumber" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="question" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="answer" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.deleteInbox" Method="deleteInbox">
+    <Parameter Name="userName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="messageId" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

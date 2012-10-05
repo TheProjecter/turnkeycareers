@@ -1,4 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*******************************
+Developer: WA Pretoruis
+Student  : 205093280
+*******************************/
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 
@@ -72,7 +76,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void BasicEduSubject_Test()
         {
@@ -102,17 +106,17 @@ namespace TestCases
 
             BasicEduSubjectDTO basicEduSub = new BasicEduSubjectDTO();
             basicEduSub.subjectName = "Technical Programming";
-            basicEduSub.subjectDescription = "Mr Kabaso is awesome";
+            basicEduSub.subjectDescription = "Mr Kabaso is Awesome";
             basicEduSub.userName = "griddy";
 
             basicEdu_context.presist(basicEduSub);
 
             /*Update*/
-            basicEduSub.subjectDescription = "Mr Kabaso is Awesome";
+            basicEduSub.subjectDescription = "Mr Kabaso is Awesome!";
             basicEdu_context.merge(basicEduSub);
 
 
-            string expectedUpdate = "Mr Kabaso is Awesome";
+            string expectedUpdate = "Mr Kabaso is Awesome!";
             BasicEduSubjectDTO updateEduSub = basicEdu_context.find("griddy","Technical Programming");
             Assert.AreEqual(expectedUpdate, updateEduSub.subjectDescription);
 

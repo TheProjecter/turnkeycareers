@@ -1,4 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*******************************
+Developer: WA Pretoruis
+Student  : 205093280
+*******************************/
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 
@@ -72,7 +76,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void AddressDAO_Test()
         {
@@ -86,7 +90,7 @@ namespace TestCases
             acc.accountType = "administrator";
             acc.status = "active";
 
-            acc_context.presist(acc);
+            Assert.AreEqual(true,acc_context.presist(acc) );
             
             AddressDTO address = new AddressDTO();
             address.userName = "griddy";
@@ -98,7 +102,7 @@ namespace TestCases
             address.town = "Cape Town";
             address.unitNumber = 22;
             
-            address_context.presist(address);
+            Assert.AreEqual(true,address_context.presist(address) );
             /*Update*/
             address.town = "Pretoria";
             address_context.merge(address);

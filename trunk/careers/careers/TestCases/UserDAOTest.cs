@@ -1,4 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿/*******************************
+Developer: WA Pretoruis
+Student  : 205093280
+*******************************/
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 
@@ -72,7 +76,7 @@ namespace TestCases
         // whether you are testing a page, web service, or a WCF service.
         [TestMethod()]
         [HostType("ASP.NET")]
-        [AspNetDevelopmentServerHost("C:\\careers\\careers\\careers", "/")]
+        [AspNetDevelopmentServerHost("C:\\careers\\careers", "/")]
         [UrlToTest("http://localhost:12075/")]
         public void UserDAO_Test()
         {
@@ -109,7 +113,7 @@ namespace TestCases
             user.surname = "Pretorious";
             user.userName = "griddy";
 
-            user_context.presist(user);
+          //  user_context.presist(user);
             //Assert.AreEqual(user.race, user_context.find("griddy","8630302930").race);
 
             ///*Update*/
