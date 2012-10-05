@@ -1,0 +1,16 @@
+C:\careers\careers\TestCases\bin\Debug\TestCases.dll.config
+C:\careers\careers\TestCases\bin\Debug\TestCases.dll
+C:\careers\careers\TestCases\bin\Debug\TestCases.pdb
+C:\careers\careers\TestCases\bin\Debug\careers.dll
+C:\careers\careers\TestCases\bin\Debug\careers.pdb
+C:\careers\careers\TestCases\obj\Debug\ResolveAssemblyReference.cache
+C:\careers\careers\TestCases\obj\Debug\TestCases.dll
+C:\careers\careers\TestCases\obj\Debug\TestCases.pdb
+C:\careers\TestCases\bin\Debug\TestCases.dll.config
+C:\careers\TestCases\bin\Debug\TestCases.dll
+C:\careers\TestCases\bin\Debug\TestCases.pdb
+C:\careers\TestCases\bin\Debug\careers.dll
+C:\careers\TestCases\bin\Debug\careers.pdb
+C:\careers\TestCases\obj\Debug\ResolveAssemblyReference.cache
+C:\careers\TestCases\obj\Debug\TestCases.dll
+C:\careers\TestCases\obj\Debug\TestCases.pdb

@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b81d6470-af7e-4d14-a302-1539ebcd64d9" name="griddy@SKIM 2012-10-05 21:09:07" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bc4360a7-4d1e-404e-9bc3-72ad9fe5cb82">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-05 21_09_07">
+      <DeploymentItem filename="C:\careers\careers\bin\careers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-05T21:09:07.3147112+02:00" queuing="2012-10-05T21:09:07.3637140+02:00" start="2012-10-05T21:09:07.3767147+02:00" finish="2012-10-05T21:10:15.7816273+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="1" error="0" failed="16" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="2bf67c0c-7935-2eb2-ed10-7d6bc2743688">
+      <Execution id="b99728d2-b3bc-419e-81fe-75a8c604d6ab" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AccountDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="HigherEducation_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="f207560f-e53c-5f4e-341b-385e1895e0b2">
+      <Execution id="8c3c6871-a2ee-41c2-ae6d-1cb85b2f3d21" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.HigherEducationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HigherEducation_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LanguageDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="10c25204-7f47-f03b-6be6-860ab345e136">
+      <Execution id="b0ed26ef-6bf7-4440-8a3d-73450f4b4a7d" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LanguageDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LanguageDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/" />
+    </UnitTest>
+    <UnitTest name="LicenseDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="eccc2a10-0495-9aba-d305-0805f9d7845a">
+      <Execution id="f3393fa2-0974-4e88-93ad-5f30f177c268" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LicenseDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LicenseDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduSubject_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="53a9893e-99d9-6734-07f5-7f6bffa7e5c6">
+      <Execution id="779ddfe7-5f6a-4190-bd30-7a544589e004" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduSubjectDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduSubject_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="Disability_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="7a6e1842-5825-6843-38eb-2607b634a237">
+      <Execution id="75c7e38a-5dc9-4bdf-8133-08056562cf9f" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.DisabilityDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Disability_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="VacancyDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="e4c7bff8-cda3-0397-d076-d8b91c7dd823">
+      <Execution id="79e618e6-1232-4fdd-bb15-4fee6d4d617a" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="VacancyKillerQuestionDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="13c8d32d-6db1-360c-514a-0dd84571fa59">
+      <Execution id="3104cc21-530c-49f0-9cb3-a29fe0175069" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyKillerQuestionDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyKillerQuestionDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="KeyWordDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="6ff6b965-6e50-5fdc-5536-bccbe5cebe50">
+      <Execution id="ce2c9e86-d714-4761-bb4b-fcb9b9308e16" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.KeyWordDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeyWordDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ContactInfo_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="51d1345c-dfbe-7d9a-6244-6822f43d7c3a">
+      <Execution id="61dbb64d-303e-4aee-b892-62daec164f6b" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ContactInfoDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContactInfo_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="UserDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="adbf42c9-157f-ac4c-3ed2-14628016c384">
+      <Execution id="17d9cd0c-b58c-49a7-84ea-13b752022225" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.UserDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AddressDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="63317210-cc2b-3568-506a-abf004ef37f8">
+      <Execution id="fb593d64-8020-4fac-9c57-4299e548a516" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AddressDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddressDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ApplicationDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="4491e100-544e-41ac-fc04-e6d0d7205248">
+      <Execution id="0c6fd461-8fd5-4641-a0a0-238f188c56b2" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ApplicationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ApplicationDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="46c2159a-a7f8-ee12-4ccf-abcff0215141">
+      <Execution id="e550984f-f1eb-4973-8627-a79cbefea953" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="InboxDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="a7a93256-cfba-7412-d1ac-a87204fe5abb">
+      <Execution id="916807fb-58c0-4c1b-801a-ad75cf0fda54" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.InboxDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InboxDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="SupportDocDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="8f9f3004-6c96-17d4-8354-66a73b86767f">
+      <Execution id="9ab9b6dd-f207-4463-9e15-a932903cd048" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.SupportDocDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SupportDocDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="EmploymentDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="ba7b3118-5eb7-4b18-3f4e-7cb0949e5493">
+      <Execution id="f8ac76be-eeca-441d-b980-cc769efe4340" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.EmploymentDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmploymentDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="10c25204-7f47-f03b-6be6-860ab345e136" executionId="b0ed26ef-6bf7-4440-8a3d-73450f4b4a7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13c8d32d-6db1-360c-514a-0dd84571fa59" executionId="3104cc21-530c-49f0-9cb3-a29fe0175069" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bf67c0c-7935-2eb2-ed10-7d6bc2743688" executionId="b99728d2-b3bc-419e-81fe-75a8c604d6ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4491e100-544e-41ac-fc04-e6d0d7205248" executionId="0c6fd461-8fd5-4641-a0a0-238f188c56b2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46c2159a-a7f8-ee12-4ccf-abcff0215141" executionId="e550984f-f1eb-4973-8627-a79cbefea953" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="51d1345c-dfbe-7d9a-6244-6822f43d7c3a" executionId="61dbb64d-303e-4aee-b892-62daec164f6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53a9893e-99d9-6734-07f5-7f6bffa7e5c6" executionId="779ddfe7-5f6a-4190-bd30-7a544589e004" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63317210-cc2b-3568-506a-abf004ef37f8" executionId="fb593d64-8020-4fac-9c57-4299e548a516" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ff6b965-6e50-5fdc-5536-bccbe5cebe50" executionId="ce2c9e86-d714-4761-bb4b-fcb9b9308e16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a6e1842-5825-6843-38eb-2607b634a237" executionId="75c7e38a-5dc9-4bdf-8133-08056562cf9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f9f3004-6c96-17d4-8354-66a73b86767f" executionId="9ab9b6dd-f207-4463-9e15-a932903cd048" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a93256-cfba-7412-d1ac-a87204fe5abb" executionId="916807fb-58c0-4c1b-801a-ad75cf0fda54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="adbf42c9-157f-ac4c-3ed2-14628016c384" executionId="17d9cd0c-b58c-49a7-84ea-13b752022225" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba7b3118-5eb7-4b18-3f4e-7cb0949e5493" executionId="f8ac76be-eeca-441d-b980-cc769efe4340" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4c7bff8-cda3-0397-d076-d8b91c7dd823" executionId="79e618e6-1232-4fdd-bb15-4fee6d4d617a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eccc2a10-0495-9aba-d305-0805f9d7845a" executionId="f3393fa2-0974-4e88-93ad-5f30f177c268" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f207560f-e53c-5f4e-341b-385e1895e0b2" executionId="8c3c6871-a2ee-41c2-ae6d-1cb85b2f3d21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b0ed26ef-6bf7-4440-8a3d-73450f4b4a7d" testId="10c25204-7f47-f03b-6be6-860ab345e136" testName="LanguageDAO_Test" computerName="SKIM" duration="00:00:00.1254618" startTime="2012-10-05T21:09:07.3897155+02:00" endTime="2012-10-05T21:09:07.7717373+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0ed26ef-6bf7-4440-8a3d-73450f4b4a7d">
+    </UnitTestResult>
+    <UnitTestResult executionId="3104cc21-530c-49f0-9cb3-a29fe0175069" testId="13c8d32d-6db1-360c-514a-0dd84571fa59" testName="VacancyKillerQuestionDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:07.8697429+02:00" endTime="2012-10-05T21:09:45.6999067+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3104cc21-530c-49f0-9cb3-a29fe0175069">
+      <Output>
+        <ErrorInfo>
+          <Message>The test started running in response to request 'http://localhost:12075/', but an error occurred before the test finished executing: Unable to connect to the remote server. </Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b99728d2-b3bc-419e-81fe-75a8c604d6ab" testId="2bf67c0c-7935-2eb2-ed10-7d6bc2743688" testName="AccountDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:45.6999067+02:00" endTime="2012-10-05T21:09:47.7070215+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b99728d2-b3bc-419e-81fe-75a8c604d6ab">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0c6fd461-8fd5-4641-a0a0-238f188c56b2" testId="4491e100-544e-41ac-fc04-e6d0d7205248" testName="ApplicationDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:47.7080216+02:00" endTime="2012-10-05T21:09:49.7111361+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c6fd461-8fd5-4641-a0a0-238f188c56b2">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e550984f-f1eb-4973-8627-a79cbefea953" testId="46c2159a-a7f8-ee12-4ccf-abcff0215141" testName="BasicEduDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:49.7121362+02:00" endTime="2012-10-05T21:09:51.7142507+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e550984f-f1eb-4973-8627-a79cbefea953">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="61dbb64d-303e-4aee-b892-62daec164f6b" testId="51d1345c-dfbe-7d9a-6244-6822f43d7c3a" testName="ContactInfo_Test" computerName="SKIM" startTime="2012-10-05T21:09:51.7152508+02:00" endTime="2012-10-05T21:09:53.7173653+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61dbb64d-303e-4aee-b892-62daec164f6b">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="779ddfe7-5f6a-4190-bd30-7a544589e004" testId="53a9893e-99d9-6734-07f5-7f6bffa7e5c6" testName="BasicEduSubject_Test" computerName="SKIM" startTime="2012-10-05T21:09:53.7183653+02:00" endTime="2012-10-05T21:09:55.7204798+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="779ddfe7-5f6a-4190-bd30-7a544589e004">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb593d64-8020-4fac-9c57-4299e548a516" testId="63317210-cc2b-3568-506a-abf004ef37f8" testName="AddressDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:55.7214799+02:00" endTime="2012-10-05T21:09:57.7245945+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb593d64-8020-4fac-9c57-4299e548a516">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce2c9e86-d714-4761-bb4b-fcb9b9308e16" testId="6ff6b965-6e50-5fdc-5536-bccbe5cebe50" testName="KeyWordDAO_Test" computerName="SKIM" startTime="2012-10-05T21:09:57.7255945+02:00" endTime="2012-10-05T21:09:59.7277090+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce2c9e86-d714-4761-bb4b-fcb9b9308e16">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75c7e38a-5dc9-4bdf-8133-08056562cf9f" testId="7a6e1842-5825-6843-38eb-2607b634a237" testName="Disability_Test" computerName="SKIM" startTime="2012-10-05T21:09:59.7287091+02:00" endTime="2012-10-05T21:10:01.7308236+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75c7e38a-5dc9-4bdf-8133-08056562cf9f">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9ab9b6dd-f207-4463-9e15-a932903cd048" testId="8f9f3004-6c96-17d4-8354-66a73b86767f" testName="SupportDocDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:01.7318237+02:00" endTime="2012-10-05T21:10:03.7339382+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9ab9b6dd-f207-4463-9e15-a932903cd048">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="916807fb-58c0-4c1b-801a-ad75cf0fda54" testId="a7a93256-cfba-7412-d1ac-a87204fe5abb" testName="InboxDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:03.7349382+02:00" endTime="2012-10-05T21:10:05.7380528+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="916807fb-58c0-4c1b-801a-ad75cf0fda54">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="17d9cd0c-b58c-49a7-84ea-13b752022225" testId="adbf42c9-157f-ac4c-3ed2-14628016c384" testName="UserDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:05.7390529+02:00" endTime="2012-10-05T21:10:07.7411674+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17d9cd0c-b58c-49a7-84ea-13b752022225">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f8ac76be-eeca-441d-b980-cc769efe4340" testId="ba7b3118-5eb7-4b18-3f4e-7cb0949e5493" testName="EmploymentDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:07.7421674+02:00" endTime="2012-10-05T21:10:09.7442820+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8ac76be-eeca-441d-b980-cc769efe4340">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="79e618e6-1232-4fdd-bb15-4fee6d4d617a" testId="e4c7bff8-cda3-0397-d076-d8b91c7dd823" testName="VacancyDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:09.7452820+02:00" endTime="2012-10-05T21:10:11.7483966+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79e618e6-1232-4fdd-bb15-4fee6d4d617a">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f3393fa2-0974-4e88-93ad-5f30f177c268" testId="eccc2a10-0495-9aba-d305-0805f9d7845a" testName="LicenseDAO_Test" computerName="SKIM" startTime="2012-10-05T21:10:11.7493966+02:00" endTime="2012-10-05T21:10:13.7515112+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3393fa2-0974-4e88-93ad-5f30f177c268">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c3c6871-a2ee-41c2-ae6d-1cb85b2f3d21" testId="f207560f-e53c-5f4e-341b-385e1895e0b2" testName="HigherEducation_Test" computerName="SKIM" startTime="2012-10-05T21:10:13.7525112+02:00" endTime="2012-10-05T21:10:15.7536257+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c3c6871-a2ee-41c2-ae6d-1cb85b2f3d21">
+      <Output>
+        <ErrorInfo>
+          <Message>Could not connect to the Web server for page 'http://localhost:12075/'. Unable to connect to the remote server. Check that the Web server is running and visible on the network and that the page specified exists.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
