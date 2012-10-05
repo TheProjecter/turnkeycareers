@@ -1,0 +1,10 @@
+C:\careers\careers\careers\bin\careers.dll
+C:\careers\careers\careers\bin\careers.pdb
+C:\careers\careers\careers\obj\Debug\ResolveAssemblyReference.cache
+C:\careers\careers\careers\obj\Debug\careers.dll
+C:\careers\careers\careers\obj\Debug\careers.pdb
+C:\careers\careers\bin\careers.dll
+C:\careers\careers\bin\careers.pdb
+C:\careers\careers\obj\Debug\ResolveAssemblyReference.cache
+C:\careers\careers\obj\Debug\careers.dll
+C:\careers\careers\obj\Debug\careers.pdb

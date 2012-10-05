@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="306b324e-06c1-447f-9ff2-2d5b7a361756" name="griddy@SKIM 2012-10-05 21:04:28" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bc4360a7-4d1e-404e-9bc3-72ad9fe5cb82">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\careers\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-05 21_04_28">
+      <DeploymentItem filename="C:\careers\careers\bin\careers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-05T21:04:28.3067529+02:00" queuing="2012-10-05T21:04:28.3547556+02:00" start="2012-10-05T21:04:28.3587558+02:00" finish="2012-10-05T21:05:08.5280534+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="VacancyDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="e4c7bff8-cda3-0397-d076-d8b91c7dd823">
+      <Execution id="75f176db-8c47-4fa3-b7ed-434abd8d226d" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e4c7bff8-cda3-0397-d076-d8b91c7dd823" executionId="75f176db-8c47-4fa3-b7ed-434abd8d226d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="75f176db-8c47-4fa3-b7ed-434abd8d226d" testId="e4c7bff8-cda3-0397-d076-d8b91c7dd823" testName="VacancyDAO_Test" computerName="SKIM" startTime="2012-10-05T21:04:28.3617560+02:00" endTime="2012-10-05T21:05:08.3900455+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75f176db-8c47-4fa3-b7ed-434abd8d226d">
+      <Output>
+        <ErrorInfo>
+          <Message>The test started running in response to request 'http://localhost:12075/', but an error occurred before the test finished executing: Unable to connect to the remote server. </Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

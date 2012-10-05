@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="148fc912-17ad-404f-9cdc-02a89f7a6055" name="griddy@SKIM 2012-10-05 20:29:40" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bc4360a7-4d1e-404e-9bc3-72ad9fe5cb82">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-05 20_29_40">
+      <DeploymentItem filename="C:\careers\careers\bin\careers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-05T20:29:40.9485617+02:00" queuing="2012-10-05T20:29:42.0646256+02:00" start="2012-10-05T20:29:42.2296350+02:00" finish="2012-10-05T20:29:44.0887413+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LanguageDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="10c25204-7f47-f03b-6be6-860ab345e136">
+      <Execution id="c79781bc-5f1b-4189-a2aa-36fd00bdd08b" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LanguageDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LanguageDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="10c25204-7f47-f03b-6be6-860ab345e136" executionId="c79781bc-5f1b-4189-a2aa-36fd00bdd08b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c79781bc-5f1b-4189-a2aa-36fd00bdd08b" testId="10c25204-7f47-f03b-6be6-860ab345e136" testName="LanguageDAO_Test" computerName="SKIM" duration="00:00:00.0970039" startTime="2012-10-05T20:29:43.3016963+02:00" endTime="2012-10-05T20:29:44.0537393+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c79781bc-5f1b-4189-a2aa-36fd00bdd08b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;no&gt;. Actual:&lt;X&gt;. </Message>
+          <StackTrace>   at TestCases.LanguageDAOTest.LanguageDAO_Test() in C:\careers\TestCases\LanguageDAOTest.cs:line 100
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

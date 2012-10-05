@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8c44bafd-2e73-4555-a84b-8b1c7f09b20a" name="griddy@SKIM 2012-10-05 20:52:22" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="bc4360a7-4d1e-404e-9bc3-72ad9fe5cb82">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-05 20_52_22">
+      <DeploymentItem filename="C:\careers\careers\bin\careers.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-05T20:52:22.3082281+02:00" queuing="2012-10-05T20:52:22.3982333+02:00" start="2012-10-05T20:52:22.4042336+02:00" finish="2012-10-05T20:54:44.7183735+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LanguageDAO_Test" storage="c:\careers\testcases\bin\debug\testcases.dll" id="10c25204-7f47-f03b-6be6-860ab345e136">
+      <Execution id="654af1e4-90dc-400c-9c85-25fb4e45530a" />
+      <TestMethod codeBase="C:/careers/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LanguageDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LanguageDAO_Test" />
+      <AspNet webSiteUrl="http://localhost:12075/">
+        <Host pathToWebApp="C:\careers\careers" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="10c25204-7f47-f03b-6be6-860ab345e136" executionId="654af1e4-90dc-400c-9c85-25fb4e45530a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="654af1e4-90dc-400c-9c85-25fb4e45530a" testId="10c25204-7f47-f03b-6be6-860ab345e136" testName="LanguageDAO_Test" computerName="SKIM" startTime="2012-10-05T20:52:22.4062337+02:00" endTime="2012-10-05T20:54:44.7063728+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="654af1e4-90dc-400c-9c85-25fb4e45530a">
+      <Output>
+        <ErrorInfo>
+          <Message>The test started running in response to request 'http://localhost:12075/', but an error occurred before the test finished executing: Unable to connect to the remote server. </Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
