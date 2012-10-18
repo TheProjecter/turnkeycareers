@@ -1,0 +1,7 @@
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\bin\Debug\TestCases.dll
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\bin\Debug\TestCases.pdb
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\bin\Debug\DAL.dll
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\bin\Debug\DAL.pdb
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\obj\Debug\TestCases.dll
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\obj\Debug\TestCases.pdb

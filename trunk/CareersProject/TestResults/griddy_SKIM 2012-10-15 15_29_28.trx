@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d38839d1-c542-4910-9bbe-5e641af29c72" name="griddy@SKIM 2012-10-15 15:29:28" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="754dac9d-a171-4ffd-bfcc-06084ea7a650">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment userDeploymentRoot="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-15 15_29_28">
+      <DeploymentItem filename="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\DAL\DAL\bin\DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T15:29:28.3209866+02:00" queuing="2012-10-15T15:29:28.3659892+02:00" start="2012-10-15T15:29:28.3709895+02:00" finish="2012-10-15T15:29:49.9272224+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UserDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="061f4e50-6efb-79bd-61c1-8df6538e1bfc">
+      <Execution id="3b769813-817f-4a5f-9e08-f98f66e5cb86" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.UserDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" executionId="3b769813-817f-4a5f-9e08-f98f66e5cb86" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3b769813-817f-4a5f-9e08-f98f66e5cb86" testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" testName="UserDAOConstructorTest" computerName="SKIM" duration="00:00:00.0558138" startTime="2012-10-15T15:29:28.3739896+02:00" endTime="2012-10-15T15:29:49.8822198+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b769813-817f-4a5f-9e08-f98f66e5cb86">
+    </UnitTestResult>
+  </Results>
+</TestRun>
