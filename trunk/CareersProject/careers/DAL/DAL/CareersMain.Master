@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CareersMain.master.cs" Inherits="careers.CareersMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagPrefix="uc1" TagName="LeftNavi" Src="LeftNav.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" type="text/css" />
+ <title></title>
+ </head>
+
+<body>
+<form id="form1" runat="server">
+    <div id="container">
+    <div id="navigationBar">
+         <%--<span class=home>
+         </span>--%>
+            <table>
+             <tr>
+             <td>
+                 <asp:Image ID="Image1" runat="server" height="99px" width="477px" ImageUrl="~/resources/tc.png" />
+             </td>
+             <%--<td>
+             </td>--%>
+            <%-- <td>
+
+                 <div class="gradientbuttons">
+<div class="gradientbuttons greentheme">
+<ul>
+<li><a href="Default.aspx">Home</a></li>
+<li><a href="ViewVacancies.aspx">View Vacancies</a></li>
+<li><a href="">About Us</a></li>
+<li><a href="">Profile</a></li>
+<li><a href="">Log In</a></li>
+</ul>
+</div>
+</div>
+             </td>--%>
+             </tr>
+             </table>
+         
+         <%--<span class="topNavigationLink"><a href="Default.aspx">Home</a></span>
+         <span class="topNavigationLink"><a href="">Inbox</a></span>
+         <span class="topNavigationLink"><a href="">View Jobs</a></span>
+         <span class="topNavigationLink"><a href="">Log In</a></span>--%>
+    </div>
+    <div id="panel" class="topNavigationLink">
+          <div class="gradientbuttons">
+<div class="gradientbuttons greentheme">
+<ul>
+<li><a href="/Default.aspx">Home</a></li>
+<li><asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/ViewVacancies.aspx">View Vacancies</asp:LinkButton></li>
+<li><a href="">About Us</a></li>
+<li><asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Profile/Address.aspx">Profile</asp:LinkButton></li>
+<!--<a href="~/Profile/Address.aspx">Profile</a></li>-->
+<li><a href="">Log In</a></li>
+</ul>
+</div>
+</div>
+<%-- <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+            </asp:SiteMapPath> // bread crumbs??--%> 
+
+       </div>
+    <div id="sideNavigationBar">
+
+    </div>
+
+    <div id="content">
+        <asp:ContentPlaceHolder ID="Content" runat="server">
+            <p style="width: 811px; margin-left: 0px">
+                <br />
+            </p>
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <div id="footer">
+        <br />
+        &copy;Turn Key Careers 2012</div>
+
+    </div>
+  </form>
+</body>
+</html>
