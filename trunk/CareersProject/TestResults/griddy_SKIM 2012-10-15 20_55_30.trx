@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f1a6aacf-1de1-4cf9-94e5-0e74c22e242d" name="griddy@SKIM 2012-10-15 20:55:30" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="754dac9d-a171-4ffd-bfcc-06084ea7a650">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-15 20_55_30">
+      <DeploymentItem filename="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\DAL\DAL\bin\DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-15T20:55:30.3351327+02:00" queuing="2012-10-15T20:55:30.3981363+02:00" start="2012-10-15T20:55:30.4061367+02:00" finish="2012-10-15T20:55:52.0373740+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="KeyWordDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="fc801932-ad80-9d42-ac0a-65f2da797308">
+      <Execution id="b65d60d2-6e68-43c6-9c35-7c540b25aa02" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.KeyWordDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeyWordDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fc801932-ad80-9d42-ac0a-65f2da797308" executionId="b65d60d2-6e68-43c6-9c35-7c540b25aa02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b65d60d2-6e68-43c6-9c35-7c540b25aa02" testId="fc801932-ad80-9d42-ac0a-65f2da797308" testName="KeyWordDAOConstructorTest" computerName="SKIM" duration="00:00:00.0689756" startTime="2012-10-15T20:55:30.4101370+02:00" endTime="2012-10-15T20:55:51.9903713+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b65d60d2-6e68-43c6-9c35-7c540b25aa02">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   at TestCases.KeyWordDAOTest.KeyWordDAOConstructorTest() in C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\KeyWordDAOTest.cs:line 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
