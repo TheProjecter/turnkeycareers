@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c84cd87a-67c9-42c3-996e-33f3cd8ad5ea" name="griddy@SKIM 2012-10-25 23:05:01" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="754dac9d-a171-4ffd-bfcc-06084ea7a650">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-25 23_05_01">
+      <DeploymentItem filename="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\DAL\DAL\bin\DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-25T23:05:01.3563827+02:00" queuing="2012-10-25T23:05:01.3993852+02:00" start="2012-10-25T23:05:01.4073856+02:00" finish="2012-10-25T23:05:24.2176903+02:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="17" executed="17" passed="17" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="VacancyKillerQuestionDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="3febcfad-b820-50ff-42a7-2e98006a2a12">
+      <Execution id="268c346f-c957-41ce-8956-cedfa41293ee" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyKillerQuestionDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyKillerQuestionDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ApplicationDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="cb602bfc-b894-a16e-d44a-c73f8789a62e">
+      <Execution id="09e6ba86-4f48-4d40-a7f7-c3f721bc6c1a" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ApplicationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ApplicationDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ContactInfoDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa">
+      <Execution id="db9d474d-267e-4c51-8365-45e01422cdf6" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ContactInfoDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContactInfoDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AddressDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="8296ca6f-80e4-d230-6b6d-24719d8e713a">
+      <Execution id="61c6866f-a8a2-4a6b-a5d7-3dcd8f99d438" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AddressDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddressDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="UserDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="061f4e50-6efb-79bd-61c1-8df6538e1bfc">
+      <Execution id="76b4309f-00c0-4d35-a984-2a8b68a9060e" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.UserDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="VacancyDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="936e2ee4-1793-6bdd-fbf7-11479f4b344b">
+      <Execution id="19764ad0-6517-47b5-aa7f-de58d1909c68" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="KeyWordDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="fc801932-ad80-9d42-ac0a-65f2da797308">
+      <Execution id="34fa81ef-3666-49f9-bc4b-74ed9a628277" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.KeyWordDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeyWordDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="InboxDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="52ade19f-d4f0-0bba-2925-9262045aae1f">
+      <Execution id="f7cd6888-5c81-4522-9cf9-d71a49cad420" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.InboxDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InboxDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduSubjectDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="4588a81a-7911-ae84-bb3a-a0204bac7bae">
+      <Execution id="d194f45f-7b11-456d-a605-aa2a30c31d1a" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduSubjectDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduSubjectDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LicenseDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6">
+      <Execution id="b55b5cb7-6c4a-43a6-a798-fb5efc00ef4e" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LicenseDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LicenseDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="HigherEducationDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="920fd339-3c76-e786-9d23-6870fe085554">
+      <Execution id="d95bbb66-cfce-4a4e-ae72-83e68868a8e2" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.HigherEducationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HigherEducationDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="SupportDocDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05">
+      <Execution id="6ab37cde-5a38-4bb8-95e6-ff099e065fe6" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.SupportDocDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SupportDocDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DisabilityDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a7a67b55-026d-7fae-3532-59ae01cadc54">
+      <Execution id="7e9dca9f-c912-48c8-bdbd-ebd5fd47b4a6" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.DisabilityDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisabilityDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AccountDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a">
+      <Execution id="cb52e637-f4e1-417a-a2db-4d4ad7a1e945" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AccountDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LanguageDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f">
+      <Execution id="e5ba1c36-851a-4ddd-a834-460ff46883ab" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LanguageDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LanguageDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a05d6b3b-b351-72cb-6f32-2c24f4df40f8">
+      <Execution id="36c7de81-5f71-40f5-8bf9-b5802ab5a78d" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="EmploymentDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="34819300-cfa1-046a-c70c-c0b8c29d239b">
+      <Execution id="189d8d11-4bbd-48a9-9d0b-f5cf1702725f" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.EmploymentDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmploymentDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" executionId="76b4309f-00c0-4d35-a984-2a8b68a9060e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34819300-cfa1-046a-c70c-c0b8c29d239b" executionId="189d8d11-4bbd-48a9-9d0b-f5cf1702725f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3febcfad-b820-50ff-42a7-2e98006a2a12" executionId="268c346f-c957-41ce-8956-cedfa41293ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4588a81a-7911-ae84-bb3a-a0204bac7bae" executionId="d194f45f-7b11-456d-a605-aa2a30c31d1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52ade19f-d4f0-0bba-2925-9262045aae1f" executionId="f7cd6888-5c81-4522-9cf9-d71a49cad420" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" executionId="cb52e637-f4e1-417a-a2db-4d4ad7a1e945" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8296ca6f-80e4-d230-6b6d-24719d8e713a" executionId="61c6866f-a8a2-4a6b-a5d7-3dcd8f99d438" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="920fd339-3c76-e786-9d23-6870fe085554" executionId="d95bbb66-cfce-4a4e-ae72-83e68868a8e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="936e2ee4-1793-6bdd-fbf7-11479f4b344b" executionId="19764ad0-6517-47b5-aa7f-de58d1909c68" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a05d6b3b-b351-72cb-6f32-2c24f4df40f8" executionId="36c7de81-5f71-40f5-8bf9-b5802ab5a78d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6" executionId="b55b5cb7-6c4a-43a6-a798-fb5efc00ef4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a67b55-026d-7fae-3532-59ae01cadc54" executionId="7e9dca9f-c912-48c8-bdbd-ebd5fd47b4a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa" executionId="db9d474d-267e-4c51-8365-45e01422cdf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05" executionId="6ab37cde-5a38-4bb8-95e6-ff099e065fe6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb602bfc-b894-a16e-d44a-c73f8789a62e" executionId="09e6ba86-4f48-4d40-a7f7-c3f721bc6c1a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f" executionId="e5ba1c36-851a-4ddd-a834-460ff46883ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc801932-ad80-9d42-ac0a-65f2da797308" executionId="34fa81ef-3666-49f9-bc4b-74ed9a628277" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="76b4309f-00c0-4d35-a984-2a8b68a9060e" testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" testName="UserDAOConstructorTest" computerName="SKIM" duration="00:00:00.1543965" startTime="2012-10-25T23:05:01.4103858+02:00" endTime="2012-10-25T23:05:22.5925974+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76b4309f-00c0-4d35-a984-2a8b68a9060e">
+    </UnitTestResult>
+    <UnitTestResult executionId="189d8d11-4bbd-48a9-9d0b-f5cf1702725f" testId="34819300-cfa1-046a-c70c-c0b8c29d239b" testName="EmploymentDAOConstructorTest" computerName="SKIM" duration="00:00:00.1199113" startTime="2012-10-25T23:05:22.5945975+02:00" endTime="2012-10-25T23:05:23.0346226+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="189d8d11-4bbd-48a9-9d0b-f5cf1702725f">
+    </UnitTestResult>
+    <UnitTestResult executionId="268c346f-c957-41ce-8956-cedfa41293ee" testId="3febcfad-b820-50ff-42a7-2e98006a2a12" testName="VacancyKillerQuestionDAOConstructorTest" computerName="SKIM" duration="00:00:00.0144441" startTime="2012-10-25T23:05:23.0356227+02:00" endTime="2012-10-25T23:05:23.0956261+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="268c346f-c957-41ce-8956-cedfa41293ee">
+    </UnitTestResult>
+    <UnitTestResult executionId="d194f45f-7b11-456d-a605-aa2a30c31d1a" testId="4588a81a-7911-ae84-bb3a-a0204bac7bae" testName="BasicEduSubjectDAOConstructorTest" computerName="SKIM" duration="00:00:00.0175495" startTime="2012-10-25T23:05:23.0976262+02:00" endTime="2012-10-25T23:05:23.1646301+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d194f45f-7b11-456d-a605-aa2a30c31d1a">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7cd6888-5c81-4522-9cf9-d71a49cad420" testId="52ade19f-d4f0-0bba-2925-9262045aae1f" testName="InboxDAOConstructorTest" computerName="SKIM" duration="00:00:00.0300623" startTime="2012-10-25T23:05:23.1676303+02:00" endTime="2012-10-25T23:05:23.2446347+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7cd6888-5c81-4522-9cf9-d71a49cad420">
+    </UnitTestResult>
+    <UnitTestResult executionId="cb52e637-f4e1-417a-a2db-4d4ad7a1e945" testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" testName="AccountDAOConstructorTest" computerName="SKIM" duration="00:00:00.0503526" startTime="2012-10-25T23:05:23.2466348+02:00" endTime="2012-10-25T23:05:23.3476405+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb52e637-f4e1-417a-a2db-4d4ad7a1e945">
+    </UnitTestResult>
+    <UnitTestResult executionId="61c6866f-a8a2-4a6b-a5d7-3dcd8f99d438" testId="8296ca6f-80e4-d230-6b6d-24719d8e713a" testName="AddressDAOConstructorTest" computerName="SKIM" duration="00:00:00.0120346" startTime="2012-10-25T23:05:23.3496407+02:00" endTime="2012-10-25T23:05:23.4096441+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61c6866f-a8a2-4a6b-a5d7-3dcd8f99d438">
+    </UnitTestResult>
+    <UnitTestResult executionId="d95bbb66-cfce-4a4e-ae72-83e68868a8e2" testId="920fd339-3c76-e786-9d23-6870fe085554" testName="HigherEducationDAOConstructorTest" computerName="SKIM" duration="00:00:00.0404167" startTime="2012-10-25T23:05:23.4116442+02:00" endTime="2012-10-25T23:05:23.4966491+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d95bbb66-cfce-4a4e-ae72-83e68868a8e2">
+    </UnitTestResult>
+    <UnitTestResult executionId="19764ad0-6517-47b5-aa7f-de58d1909c68" testId="936e2ee4-1793-6bdd-fbf7-11479f4b344b" testName="VacancyDAOConstructorTest" computerName="SKIM" duration="00:00:00.0050404" startTime="2012-10-25T23:05:23.4976491+02:00" endTime="2012-10-25T23:05:23.5476520+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19764ad0-6517-47b5-aa7f-de58d1909c68">
+    </UnitTestResult>
+    <UnitTestResult executionId="36c7de81-5f71-40f5-8bf9-b5802ab5a78d" testId="a05d6b3b-b351-72cb-6f32-2c24f4df40f8" testName="BasicEduDAOConstructorTest" computerName="SKIM" duration="00:00:00.0080997" startTime="2012-10-25T23:05:23.5486520+02:00" endTime="2012-10-25T23:05:23.6006550+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36c7de81-5f71-40f5-8bf9-b5802ab5a78d">
+    </UnitTestResult>
+    <UnitTestResult executionId="b55b5cb7-6c4a-43a6-a798-fb5efc00ef4e" testId="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6" testName="LicenseDAOConstructorTest" computerName="SKIM" duration="00:00:00.0232044" startTime="2012-10-25T23:05:23.6016551+02:00" endTime="2012-10-25T23:05:23.6746593+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b55b5cb7-6c4a-43a6-a798-fb5efc00ef4e">
+    </UnitTestResult>
+    <UnitTestResult executionId="7e9dca9f-c912-48c8-bdbd-ebd5fd47b4a6" testId="a7a67b55-026d-7fae-3532-59ae01cadc54" testName="DisabilityDAOConstructorTest" computerName="SKIM" duration="00:00:00.0116092" startTime="2012-10-25T23:05:23.6766594+02:00" endTime="2012-10-25T23:05:23.7316625+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7e9dca9f-c912-48c8-bdbd-ebd5fd47b4a6">
+    </UnitTestResult>
+    <UnitTestResult executionId="db9d474d-267e-4c51-8365-45e01422cdf6" testId="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa" testName="ContactInfoDAOConstructorTest" computerName="SKIM" duration="00:00:00.0113269" startTime="2012-10-25T23:05:23.7326626+02:00" endTime="2012-10-25T23:05:23.7876657+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db9d474d-267e-4c51-8365-45e01422cdf6">
+    </UnitTestResult>
+    <UnitTestResult executionId="6ab37cde-5a38-4bb8-95e6-ff099e065fe6" testId="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05" testName="SupportDocDAOConstructorTest" computerName="SKIM" duration="00:00:00.0370644" startTime="2012-10-25T23:05:23.7886658+02:00" endTime="2012-10-25T23:05:23.8726706+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ab37cde-5a38-4bb8-95e6-ff099e065fe6">
+    </UnitTestResult>
+    <UnitTestResult executionId="09e6ba86-4f48-4d40-a7f7-c3f721bc6c1a" testId="cb602bfc-b894-a16e-d44a-c73f8789a62e" testName="ApplicationDAOConstructorTest" computerName="SKIM" duration="00:00:00.0142108" startTime="2012-10-25T23:05:23.8736706+02:00" endTime="2012-10-25T23:05:23.9316740+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09e6ba86-4f48-4d40-a7f7-c3f721bc6c1a">
+    </UnitTestResult>
+    <UnitTestResult executionId="e5ba1c36-851a-4ddd-a834-460ff46883ab" testId="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f" testName="LanguageDAOConstructorTest" computerName="SKIM" duration="00:00:00.0114944" startTime="2012-10-25T23:05:23.9336741+02:00" endTime="2012-10-25T23:05:23.9876772+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5ba1c36-851a-4ddd-a834-460ff46883ab">
+    </UnitTestResult>
+    <UnitTestResult executionId="34fa81ef-3666-49f9-bc4b-74ed9a628277" testId="fc801932-ad80-9d42-ac0a-65f2da797308" testName="KeyWordDAOConstructorTest" computerName="SKIM" duration="00:00:00.0346041" startTime="2012-10-25T23:05:23.9886772+02:00" endTime="2012-10-25T23:05:24.0666817+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34fa81ef-3666-49f9-bc4b-74ed9a628277">
+    </UnitTestResult>
+  </Results>
+</TestRun>

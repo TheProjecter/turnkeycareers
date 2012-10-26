@@ -1,0 +1,12 @@
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CareersProject\RESTClient\obj\x86\Debug\RESTClient.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\Projects\CareersProject\RESTClient\obj\x86\Debug\RESTClient.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\CareersProject\RESTClient\bin\Debug\RESTClient.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\CareersProject\RESTClient\bin\Debug\RESTClient.pdb
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\RESTClient.exe
+C:\Documents and Settings\Administrator\My Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\RESTClient.pdb
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\RESTClient\bin\Debug\RESTClient.exe
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\RESTClient\bin\Debug\RESTClient.pdb
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\RESTClient.exe
+C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\RESTClient\obj\x86\Debug\RESTClient.pdb

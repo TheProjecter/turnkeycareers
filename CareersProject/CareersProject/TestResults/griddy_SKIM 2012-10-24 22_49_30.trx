@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="2c5a9c39-5566-414d-9b4b-60d42d1ef14e" name="griddy@SKIM 2012-10-24 22:49:30" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="754dac9d-a171-4ffd-bfcc-06084ea7a650">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-24 22_49_30">
+      <DeploymentItem filename="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\DAL\DAL\bin\DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-24T22:49:30.5417326+02:00" queuing="2012-10-24T22:49:30.6037361+02:00" start="2012-10-24T22:49:30.6137367+02:00" finish="2012-10-24T22:49:31.6827979+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" error="0" failed="17" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="VacancyKillerQuestionDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="3febcfad-b820-50ff-42a7-2e98006a2a12">
+      <Execution id="84f89b37-fb34-4717-9c68-6acdf7f1508f" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyKillerQuestionDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyKillerQuestionDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ApplicationDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="cb602bfc-b894-a16e-d44a-c73f8789a62e">
+      <Execution id="8c2a5984-f7a1-488e-952e-ec4be63312d9" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ApplicationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ApplicationDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="ContactInfoDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa">
+      <Execution id="2e770ac9-d9ad-42fb-879b-6cd1e2335bb6" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.ContactInfoDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContactInfoDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AddressDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="8296ca6f-80e4-d230-6b6d-24719d8e713a">
+      <Execution id="b28c1ecd-7169-4562-aab1-7de9b069f043" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AddressDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddressDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="UserDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="061f4e50-6efb-79bd-61c1-8df6538e1bfc">
+      <Execution id="e8b27064-676c-4779-b123-946f00a2437d" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.UserDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UserDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="VacancyDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="936e2ee4-1793-6bdd-fbf7-11479f4b344b">
+      <Execution id="1bceaf0f-b854-47ed-a64f-af29aa26a506" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.VacancyDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="VacancyDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="KeyWordDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="fc801932-ad80-9d42-ac0a-65f2da797308">
+      <Execution id="de4b29ea-5b53-4831-810b-3f3326959e59" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.KeyWordDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeyWordDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="InboxDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="52ade19f-d4f0-0bba-2925-9262045aae1f">
+      <Execution id="23803e77-2c24-449c-aac9-ac9a8adaa942" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.InboxDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InboxDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduSubjectDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="4588a81a-7911-ae84-bb3a-a0204bac7bae">
+      <Execution id="86df0620-f984-4640-be69-25960277f834" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduSubjectDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduSubjectDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="LicenseDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6">
+      <Execution id="40a55c4a-55c4-4926-a377-5f228721a2fb" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LicenseDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LicenseDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="HigherEducationDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="920fd339-3c76-e786-9d23-6870fe085554">
+      <Execution id="a714adce-fde5-4f8a-b6f3-c0c1ee0fe682" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.HigherEducationDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HigherEducationDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="SupportDocDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05">
+      <Execution id="dcad64f4-7e62-4947-b37d-8a7296becda3" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.SupportDocDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SupportDocDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="DisabilityDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a7a67b55-026d-7fae-3532-59ae01cadc54">
+      <Execution id="8a289f17-7c76-4bb9-a751-02f227a42efa" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.DisabilityDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DisabilityDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="AccountDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a">
+      <Execution id="153bc6ae-6673-4d24-b7da-813e44fb89fa" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AccountDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountDAOConstructorTest" />
+    </UnitTest>
+    <UnitTest name="LanguageDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f">
+      <Execution id="d78370eb-9459-4365-95dc-a7b831e022ad" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.LanguageDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LanguageDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="BasicEduDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="a05d6b3b-b351-72cb-6f32-2c24f4df40f8">
+      <Execution id="62cbdb41-c8dd-4402-b5ef-1c723320d302" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.BasicEduDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicEduDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+    <UnitTest name="EmploymentDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="34819300-cfa1-046a-c70c-c0b8c29d239b">
+      <Execution id="e364a3a6-8f0c-4322-9ff6-39c448a91834" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.EmploymentDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EmploymentDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" executionId="e8b27064-676c-4779-b123-946f00a2437d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34819300-cfa1-046a-c70c-c0b8c29d239b" executionId="e364a3a6-8f0c-4322-9ff6-39c448a91834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3febcfad-b820-50ff-42a7-2e98006a2a12" executionId="84f89b37-fb34-4717-9c68-6acdf7f1508f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4588a81a-7911-ae84-bb3a-a0204bac7bae" executionId="86df0620-f984-4640-be69-25960277f834" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="52ade19f-d4f0-0bba-2925-9262045aae1f" executionId="23803e77-2c24-449c-aac9-ac9a8adaa942" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" executionId="153bc6ae-6673-4d24-b7da-813e44fb89fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8296ca6f-80e4-d230-6b6d-24719d8e713a" executionId="b28c1ecd-7169-4562-aab1-7de9b069f043" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="920fd339-3c76-e786-9d23-6870fe085554" executionId="a714adce-fde5-4f8a-b6f3-c0c1ee0fe682" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="936e2ee4-1793-6bdd-fbf7-11479f4b344b" executionId="1bceaf0f-b854-47ed-a64f-af29aa26a506" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a05d6b3b-b351-72cb-6f32-2c24f4df40f8" executionId="62cbdb41-c8dd-4402-b5ef-1c723320d302" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6" executionId="40a55c4a-55c4-4926-a377-5f228721a2fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7a67b55-026d-7fae-3532-59ae01cadc54" executionId="8a289f17-7c76-4bb9-a751-02f227a42efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa" executionId="2e770ac9-d9ad-42fb-879b-6cd1e2335bb6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05" executionId="dcad64f4-7e62-4947-b37d-8a7296becda3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb602bfc-b894-a16e-d44a-c73f8789a62e" executionId="8c2a5984-f7a1-488e-952e-ec4be63312d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f" executionId="d78370eb-9459-4365-95dc-a7b831e022ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc801932-ad80-9d42-ac0a-65f2da797308" executionId="de4b29ea-5b53-4831-810b-3f3326959e59" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e8b27064-676c-4779-b123-946f00a2437d" testId="061f4e50-6efb-79bd-61c1-8df6538e1bfc" testName="UserDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:30.6187370+02:00" endTime="2012-10-24T22:49:30.9097536+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8b27064-676c-4779-b123-946f00a2437d">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_UserDAOConstructorTe.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_UserDAOConstructorTe.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="e364a3a6-8f0c-4322-9ff6-39c448a91834" testId="34819300-cfa1-046a-c70c-c0b8c29d239b" testName="EmploymentDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:30.9107537+02:00" endTime="2012-10-24T22:49:30.9177541+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e364a3a6-8f0c-4322-9ff6-39c448a91834">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_EmploymentDAOConstru.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_EmploymentDAOConstru.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="84f89b37-fb34-4717-9c68-6acdf7f1508f" testId="3febcfad-b820-50ff-42a7-2e98006a2a12" testName="VacancyKillerQuestionDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:30.9187542+02:00" endTime="2012-10-24T22:49:30.9257546+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="84f89b37-fb34-4717-9c68-6acdf7f1508f">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_VacancyKillerQuestio.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_VacancyKillerQuestio.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="86df0620-f984-4640-be69-25960277f834" testId="4588a81a-7911-ae84-bb3a-a0204bac7bae" testName="BasicEduSubjectDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:30.9267546+02:00" endTime="2012-10-24T22:49:30.9327550+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86df0620-f984-4640-be69-25960277f834">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_BasicEduSubjectDAOCo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_BasicEduSubjectDAOCo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="23803e77-2c24-449c-aac9-ac9a8adaa942" testId="52ade19f-d4f0-0bba-2925-9262045aae1f" testName="InboxDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:30.9337550+02:00" endTime="2012-10-24T22:49:30.9407554+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23803e77-2c24-449c-aac9-ac9a8adaa942">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_InboxDAOConstructorT.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_InboxDAOConstructorT.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="153bc6ae-6673-4d24-b7da-813e44fb89fa" testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" testName="AccountDAOConstructorTest" computerName="SKIM" duration="00:00:00.0311012" startTime="2012-10-24T22:49:30.9417555+02:00" endTime="2012-10-24T22:49:31.1567678+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="153bc6ae-6673-4d24-b7da-813e44fb89fa">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   at TestCases.AccountDAOTest.AccountDAOConstructorTest() in C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\TestCases\AccountDAOTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b28c1ecd-7169-4562-aab1-7de9b069f043" testId="8296ca6f-80e4-d230-6b6d-24719d8e713a" testName="AddressDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1577678+02:00" endTime="2012-10-24T22:49:31.1647682+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b28c1ecd-7169-4562-aab1-7de9b069f043">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_AddressDAOConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_AddressDAOConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="a714adce-fde5-4f8a-b6f3-c0c1ee0fe682" testId="920fd339-3c76-e786-9d23-6870fe085554" testName="HigherEducationDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1657683+02:00" endTime="2012-10-24T22:49:31.1737687+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a714adce-fde5-4f8a-b6f3-c0c1ee0fe682">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_HigherEducationDAOCo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_HigherEducationDAOCo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="1bceaf0f-b854-47ed-a64f-af29aa26a506" testId="936e2ee4-1793-6bdd-fbf7-11479f4b344b" testName="VacancyDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1747688+02:00" endTime="2012-10-24T22:49:31.1807691+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bceaf0f-b854-47ed-a64f-af29aa26a506">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_VacancyDAOConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_VacancyDAOConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="62cbdb41-c8dd-4402-b5ef-1c723320d302" testId="a05d6b3b-b351-72cb-6f32-2c24f4df40f8" testName="BasicEduDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1817692+02:00" endTime="2012-10-24T22:49:31.1887696+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62cbdb41-c8dd-4402-b5ef-1c723320d302">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_BasicEduDAOConstruct.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_BasicEduDAOConstruct.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="40a55c4a-55c4-4926-a377-5f228721a2fb" testId="a3262a21-4804-a2aa-4ef0-2f5dd856e6b6" testName="LicenseDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1897697+02:00" endTime="2012-10-24T22:49:31.1977701+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40a55c4a-55c4-4926-a377-5f228721a2fb">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_LicenseDAOConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_LicenseDAOConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="8a289f17-7c76-4bb9-a751-02f227a42efa" testId="a7a67b55-026d-7fae-3532-59ae01cadc54" testName="DisabilityDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.1987702+02:00" endTime="2012-10-24T22:49:31.2057706+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a289f17-7c76-4bb9-a751-02f227a42efa">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_DisabilityDAOConstru.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_DisabilityDAOConstru.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="2e770ac9-d9ad-42fb-879b-6cd1e2335bb6" testId="ae3ff0e8-bb64-5264-a976-22bbdc3e81aa" testName="ContactInfoDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.2067706+02:00" endTime="2012-10-24T22:49:31.2137710+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e770ac9-d9ad-42fb-879b-6cd1e2335bb6">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_ContactInfoDAOConstr.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_ContactInfoDAOConstr.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="dcad64f4-7e62-4947-b37d-8a7296becda3" testId="bf478dc6-3e8d-c2a8-0e8a-a118795f7c05" testName="SupportDocDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.2147711+02:00" endTime="2012-10-24T22:49:31.2217715+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcad64f4-7e62-4947-b37d-8a7296becda3">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_SupportDocDAOConstru.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_SupportDocDAOConstru.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c2a5984-f7a1-488e-952e-ec4be63312d9" testId="cb602bfc-b894-a16e-d44a-c73f8789a62e" testName="ApplicationDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.2227715+02:00" endTime="2012-10-24T22:49:31.2287719+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c2a5984-f7a1-488e-952e-ec4be63312d9">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_ApplicationDAOConstr.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_ApplicationDAOConstr.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="d78370eb-9459-4365-95dc-a7b831e022ad" testId="d0654bd4-fcbb-1d9a-33ca-ef8fb270654f" testName="LanguageDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.2297719+02:00" endTime="2012-10-24T22:49:31.2367723+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d78370eb-9459-4365-95dc-a7b831e022ad">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_LanguageDAOConstruct.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_LanguageDAOConstruct.html" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="de4b29ea-5b53-4831-810b-3f3326959e59" testId="fc801932-ad80-9d42-ac0a-65f2da797308" testName="KeyWordDAOConstructorTest" computerName="SKIM" startTime="2012-10-24T22:49:31.2377724+02:00" endTime="2012-10-24T22:49:31.2447728+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de4b29ea-5b53-4831-810b-3f3326959e59">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_KeyWordDAOConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_KeyWordDAOConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>
