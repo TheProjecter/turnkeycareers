@@ -1,0 +1,613 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FE26B454-3D49-494A-AB4B-10E3B405DCE8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Manager\SelectVacancy.aspx" />
+    <Content Include="Account\Manager\Shortlisted.aspx" />
+    <Content Include="Account\Manager\ViewAll.aspx" />
+    <Content Include="Account\Manager\ViewShortlisted.aspx" />
+    <Content Include="Account\Manager\WebForm1.aspx" />
+    <Content Include="Account\Recruter\AddVacancy.aspx" />
+    <Content Include="Account\Recruter\SelectVacancy.aspx" />
+    <Content Include="Account\Recruter\ViewAll.aspx" />
+    <Content Include="Account\Recruter\ViewShortlisted.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Inbox\InboxMessage.aspx" />
+    <Content Include="Inbox\UserInbox.aspx" />
+    <Content Include="Utilities\EmailTemplates\resetAccountPasswordByAdmin.html" />
+    <Content Include="Utilities\EmailTemplates\createAccount.html" />
+    <Content Include="Utilities\EmailTemplates\resetAccountPassword.html" />
+    <Content Include="Error.aspx" />
+    <Content Include="Presentation\Address\Address.aspx" />
+    <Content Include="Presentation\BasicEdu\BasicEdu.aspx" />
+    <Content Include="Presentation\ContactInformation\Contact.aspx" />
+    <Content Include="Presentation\Disability\Disability.aspx" />
+    <Content Include="Presentation\Employment\Employment.aspx" />
+    <Content Include="Presentation\HigherEducation\HigherEducation.aspx" />
+    <Content Include="Presentation\Inbox\User\UserInbox.aspx" />
+    <Content Include="Presentation\Language\Language.aspx" />
+    <Content Include="Presentation\Profile\DisabilityView.aspx" />
+    <Content Include="Presentation\Vacancy\Vacancy.aspx" />
+    <Content Include="Profile\Address.aspx" />
+    <Content Include="Profile\BasicEdu.aspx" />
+    <Content Include="Profile\Content.aspx" />
+    <Content Include="Profile\Disability.aspx" />
+    <Content Include="Profile\Employment.aspx" />
+    <Content Include="Profile\HigherEducation.aspx" />
+    <Content Include="Profile\Language.aspx" />
+    <Content Include="Profile\Default.aspx" />
+    <Content Include="Administrator\Administration.aspx" />
+    <Content Include="resources\background.jpg" />
+    <Content Include="resources\header.jpg" />
+    <Content Include="resources\menuBar.png" />
+    <Content Include="resources\menuTab.png" />
+    <Content Include="resources\navBar.jpg" />
+    <Content Include="resources\navsideBar.jpg" />
+    <Content Include="resources\tc.png" />
+    <Content Include="Restricted.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="UnauthorisedAcess.aspx" />
+    <Content Include="Home\ViewVacancies.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="login.aspx" />
+    <Content Include="Home\Default.aspx" />
+    <Content Include="Account\CreateUserAccount.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\RetrievePassword.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Account.master.cs">
+      <DependentUpon>Account.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Account.master.designer.cs">
+      <DependentUpon>Account.master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\Manager.master.cs">
+      <DependentUpon>Manager.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\Manager.master.designer.cs">
+      <DependentUpon>Manager.master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\SelectVacancy.aspx.cs">
+      <DependentUpon>SelectVacancy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\SelectVacancy.aspx.designer.cs">
+      <DependentUpon>SelectVacancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\Shortlisted.aspx.cs">
+      <DependentUpon>Shortlisted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\Shortlisted.aspx.designer.cs">
+      <DependentUpon>Shortlisted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\ViewAll.aspx.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\ViewAll.aspx.designer.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\ViewShortlisted.aspx.cs">
+      <DependentUpon>ViewShortlisted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\ViewShortlisted.aspx.designer.cs">
+      <DependentUpon>ViewShortlisted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manager\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manager\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Recruter\AddVacancy.aspx.cs">
+      <DependentUpon>AddVacancy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Recruter\AddVacancy.aspx.designer.cs">
+      <DependentUpon>AddVacancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Recruter\Recruter.master.cs">
+      <DependentUpon>Recruter.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Recruter\Recruter.master.designer.cs">
+      <DependentUpon>Recruter.master</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Recruter\SelectVacancy.aspx.cs">
+      <DependentUpon>SelectVacancy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Recruter\SelectVacancy.aspx.designer.cs">
+      <DependentUpon>SelectVacancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Recruter\ViewAll.aspx.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Recruter\ViewAll.aspx.designer.cs">
+      <DependentUpon>ViewAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Recruter\ViewShortlisted.aspx.cs">
+      <DependentUpon>ViewShortlisted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Recruter\ViewShortlisted.aspx.designer.cs">
+      <DependentUpon>ViewShortlisted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DAOImp\AccountDAO.cs" />
+    <Compile Include="DAL\DAOImp\AddressDAO.cs" />
+    <Compile Include="DAL\DAOImp\ApplicationDAO.cs" />
+    <Compile Include="DAL\DAOImp\BasicEduDAO.cs" />
+    <Compile Include="DAL\DAOImp\BasicEduSubjectDAO.cs" />
+    <Compile Include="DAL\DAOImp\ContactInfoDAO.cs" />
+    <Compile Include="DAL\DAOImp\DisabilityDAO.cs" />
+    <Compile Include="DAL\DAOImp\EmploymentDAO.cs" />
+    <Compile Include="DAL\DAOImp\HigherEducationDAO.cs" />
+    <Compile Include="DAL\DAOImp\InboxDAO.cs" />
+    <Compile Include="DAL\DAOImp\KeyWordDAO.cs" />
+    <Compile Include="DAL\DAOImp\LanguageDAO.cs" />
+    <Compile Include="DAL\DAOImp\LicenseDAO.cs" />
+    <Compile Include="DAL\DAOImp\SupportDocDAO.cs" />
+    <Compile Include="DAL\DAOImp\UserDAO.cs" />
+    <Compile Include="DAL\DAOImp\VacancyDAO.cs" />
+    <Compile Include="DAL\DAOImp\VacancyKillerQuestionDAO.cs" />
+    <Compile Include="DAL\DAO\DAO_Account_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Address_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Application_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_BasicEduSubject_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_BasicEdu_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_ContactInfo_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Disability_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Employment_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_HigherEducation_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Inbox_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_KeyWord_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Language_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_License_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_SupportingDoc_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_User_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_VacancyKillerQuestion_Interface.cs" />
+    <Compile Include="DAL\DAO\DAO_Vacancy_Interface.cs" />
+    <Compile Include="DAL\DTO\AccountDTO.cs" />
+    <Compile Include="DAL\DTO\AddressDTO.cs" />
+    <Compile Include="DAL\DTO\ApplicationDTO.cs" />
+    <Compile Include="DAL\DTO\ApplicationViewDTO.cs" />
+    <Compile Include="DAL\DTO\BasicEduDTO.cs" />
+    <Compile Include="DAL\DTO\BasicEduSubjectDTO.cs" />
+    <Compile Include="DAL\DTO\ContactInfoDTO.cs" />
+    <Compile Include="DAL\DTO\DisabilityDTO.cs" />
+    <Compile Include="DAL\DTO\EmploymentDTO.cs" />
+    <Compile Include="DAL\DTO\HigherEducationDTO.cs" />
+    <Compile Include="DAL\DTO\InboxDTO.cs" />
+    <Compile Include="DAL\DTO\KeyWordDTO.cs" />
+    <Compile Include="DAL\DTO\LanguageDTO.cs" />
+    <Compile Include="DAL\DTO\LicenseDTO.cs" />
+    <Compile Include="DAL\DTO\LogDTO.cs" />
+    <Compile Include="DAL\DTO\SupportDocDTO.cs" />
+    <Compile Include="DAL\DTO\UserDTO.cs" />
+    <Compile Include="DAL\DTO\VacancyDTO.cs" />
+    <Compile Include="DAL\DTO\VacancyKillerQuestionDTO.cs" />
+    <Compile Include="DAL\Sets\AccountStatus.cs" />
+    <Compile Include="DAL\Sets\AccountType.cs" />
+    <Compile Include="DAL\Sets\ApplicationStatus.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inbox\InboxMessage.aspx.cs">
+      <DependentUpon>InboxMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inbox\InboxMessage.aspx.designer.cs">
+      <DependentUpon>InboxMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Inbox\UserInbox.aspx.cs">
+      <DependentUpon>UserInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Inbox\UserInbox.aspx.designer.cs">
+      <DependentUpon>UserInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\IMembershipService.cs" />
+    <Compile Include="CareersMain.Master.cs">
+      <DependentUpon>CareersMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CareersMain.Master.designer.cs">
+      <DependentUpon>CareersMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Services\VacancyServices\GenerateVacancyNumber.cs" />
+    <Compile Include="Services\VacancyServices\IGenerateVacancyNumber.cs" />
+    <Compile Include="Utilities\Constants\Constants.cs" />
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\MembershipService.cs" />
+    <Compile Include="Presentation\Address\Address.aspx.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Address\Address.aspx.designer.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Address\AddressPresenter.cs" />
+    <Compile Include="Presentation\Address\IAddressPresenter.cs" />
+    <Compile Include="Presentation\Address\IAddressView.cs" />
+    <Compile Include="Presentation\BasicEdu\BasicEdu.aspx.cs">
+      <DependentUpon>BasicEdu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\BasicEdu\BasicEdu.aspx.designer.cs">
+      <DependentUpon>BasicEdu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\BasicEdu\BasicEduPresenter.cs" />
+    <Compile Include="Presentation\BasicEdu\IBasicEduPresenter.cs" />
+    <Compile Include="Presentation\BasicEdu\IBasicEduSubjectPresenter.cs" />
+    <Compile Include="Presentation\BasicEdu\IBasicEduSubjectView.cs" />
+    <Compile Include="Presentation\BasicEdu\IBasicEduView.cs" />
+    <Compile Include="Presentation\ContactInformation\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\ContactInformation\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ContactInformation\ContactInformationPresenter.cs" />
+    <Compile Include="Presentation\ContactInformation\IContactInformationPresenter.cs" />
+    <Compile Include="Presentation\ContactInformation\IContactInformationView.cs" />
+    <Compile Include="Presentation\Disability\Disability.aspx.cs">
+      <DependentUpon>Disability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Disability\Disability.aspx.designer.cs">
+      <DependentUpon>Disability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Disability\DisabilityPresenter.cs" />
+    <Compile Include="Presentation\Disability\IDisabilityPresenter.cs" />
+    <Compile Include="Presentation\Disability\IDisabilityView.cs" />
+    <Compile Include="Presentation\Employment\Employment.aspx.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Employment\Employment.aspx.designer.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Employment\EmploymentPresenter.cs" />
+    <Compile Include="Presentation\Employment\IEmploymentPresenter.cs" />
+    <Compile Include="Presentation\Employment\IEmploymentView.cs" />
+    <Compile Include="Presentation\HigherEducation\HigherEducation.aspx.cs">
+      <DependentUpon>HigherEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\HigherEducation\HigherEducation.aspx.designer.cs">
+      <DependentUpon>HigherEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\HigherEducation\HigherEducationPresenter.cs" />
+    <Compile Include="Presentation\HigherEducation\IHigherEducationPresenter.cs" />
+    <Compile Include="Presentation\HigherEducation\IHigherEducationView.cs" />
+    <Compile Include="Presentation\Inbox\User\IUserPresenter.cs" />
+    <Compile Include="Presentation\Inbox\User\IUserView.cs" />
+    <Compile Include="Presentation\Inbox\User\UserInbox.aspx.cs">
+      <DependentUpon>UserInbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Inbox\User\UserInbox.aspx.designer.cs">
+      <DependentUpon>UserInbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Language\ILanguagePresenter.cs" />
+    <Compile Include="Presentation\Language\ILanguageView.cs" />
+    <Compile Include="Presentation\Language\Language.aspx.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Language\Language.aspx.designer.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Language\LanguagePresenter.cs" />
+    <Compile Include="Presentation\License\ILicensePresenter.cs" />
+    <Compile Include="Presentation\License\ILicenseView.cs" />
+    <Compile Include="Presentation\Profile\DisabilityPresenter.cs" />
+    <Compile Include="Presentation\Profile\DisabilityView.aspx.cs">
+      <DependentUpon>DisabilityView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Profile\DisabilityView.aspx.designer.cs">
+      <DependentUpon>DisabilityView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Profile\IDisabilityPresenter.cs" />
+    <Compile Include="Presentation\Profile\IDisabilityView.cs" />
+    <Compile Include="Presentation\SupportingDocs\ISupportingDocsPresenter.cs" />
+    <Compile Include="Presentation\SupportingDocs\ISupportingDocsView.cs" />
+    <Compile Include="Presentation\User\IUserPresenter.cs" />
+    <Compile Include="Presentation\User\IUserView.cs" />
+    <Compile Include="Presentation\Vacancy\IVacancyPresenter.cs" />
+    <Compile Include="Presentation\Vacancy\IVacancyView.cs" />
+    <Compile Include="Presentation\Vacancy\Vacancy.aspx.cs">
+      <DependentUpon>Vacancy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Presentation\Vacancy\Vacancy.aspx.designer.cs">
+      <DependentUpon>Vacancy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Vacancy\VacancyPresenter.cs" />
+    <Compile Include="Profile\Address.aspx.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Address.aspx.designer.cs">
+      <DependentUpon>Address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\BasicEdu.aspx.cs">
+      <DependentUpon>BasicEdu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\BasicEdu.aspx.designer.cs">
+      <DependentUpon>BasicEdu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\ProfileMain.Master.cs">
+      <DependentUpon>ProfileMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="Account\Account.master" />
+    <Content Include="Account\Manager\Manager.master" />
+    <Content Include="Account\Recruter\Recruter.master" />
+    <Compile Include="Profile\ProfileMain.Master.designer.cs">
+      <DependentUpon>ProfileMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Content.aspx.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Content.aspx.designer.cs">
+      <DependentUpon>Content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Disability.aspx.cs">
+      <DependentUpon>Disability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Disability.aspx.designer.cs">
+      <DependentUpon>Disability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Employment.aspx.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Employment.aspx.designer.cs">
+      <DependentUpon>Employment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\HigherEducation.aspx.cs">
+      <DependentUpon>HigherEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\HigherEducation.aspx.designer.cs">
+      <DependentUpon>HigherEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Language.aspx.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Language.aspx.designer.cs">
+      <DependentUpon>Language.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Profile.master.cs">
+      <DependentUpon>Profile.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Profile.master.designer.cs">
+      <DependentUpon>Profile.master</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profile\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\Administration.aspx.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\Administration.aspx.designer.cs">
+      <DependentUpon>Administration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restricted.aspx.cs">
+      <DependentUpon>Restricted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restricted.aspx.designer.cs">
+      <DependentUpon>Restricted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AccountService.cs" />
+    <Compile Include="Services\AccountServiceImpl.cs" />
+    <Compile Include="Services\ContactService.cs" />
+    <Compile Include="Services\InboxService.cs" />
+    <Compile Include="Services\InboxServiceImpl.cs" />
+    <Compile Include="Services\Search\ApplicationSearchService.cs" />
+    <Compile Include="Services\Search\ApplicationSearchServiceImpl.cs" />
+    <Compile Include="Services\Search\InboxMessageSearchService.cs" />
+    <Compile Include="Services\Search\InboxMessageSearchServiceImpl.cs" />
+    <Compile Include="Services\SecurityService.cs" />
+    <Compile Include="Services\SecurityServiceImpl.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\UserServiceImpl.cs" />
+    <Compile Include="Services\VacancyServices\ExpiredVacancies.cs" />
+    <Compile Include="Services\VacancyServices\FindVacanciesByManager.cs" />
+    <Compile Include="Services\VacancyServices\FindVacanciesByRecruiter.cs" />
+    <Compile Include="Services\VacancyServices\FindVacanciesBySite.cs" />
+    <Compile Include="Services\VacancyServices\FindVacancyByTitle.cs" />
+    <Compile Include="Services\VacancyServices\LiveVacancies.cs" />
+    <Compile Include="Services\VacancyServices\VacancyByDepartment.cs" />
+    <Compile Include="Services\VacancyServices\VacancyStatus.cs" />
+    <Compile Include="UnauthorisedAcess.aspx.cs">
+      <DependentUpon>UnauthorisedAcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UnauthorisedAcess.aspx.designer.cs">
+      <DependentUpon>UnauthorisedAcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ApplicationControler.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utilities\ValidationUtility.cs" />
+    <Compile Include="Home\ViewVacancies.aspx.cs">
+      <DependentUpon>ViewVacancies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\ViewVacancies.aspx.designer.cs">
+      <DependentUpon>ViewVacancies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\CreateUserAccount.aspx.cs">
+      <DependentUpon>CreateUserAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\CreateUserAccount.aspx.designer.cs">
+      <DependentUpon>CreateUserAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RetrievePassword.aspx.cs">
+      <DependentUpon>RetrievePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RetrievePassword.aspx.designer.cs">
+      <DependentUpon>RetrievePassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\User\" />
+    <Folder Include="Presentation\Inbox\Manager\" />
+    <Folder Include="Presentation\Inbox\Recruter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Presentation\Profile\App_LocalResources\DisabilityView.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CareersMain.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Profile\Profile.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Profile\ProfileMain.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3534</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

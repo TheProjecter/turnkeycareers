@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="69d10b02-4bc6-49b1-8775-c569db61b076" name="griddy@SKIM 2012-10-25 22:49:05" runUser="skim\griddy" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="754dac9d-a171-4ffd-bfcc-06084ea7a650">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="griddy_SKIM 2012-10-25 22_49_05">
+      <DeploymentItem filename="C:\Users\griddy\Documents\Visual Studio 2010\CareersProject\DAL\DAL\bin\DAL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-10-25T22:49:05.4917104+02:00" queuing="2012-10-25T22:49:05.5337128+02:00" start="2012-10-25T22:49:05.5457135+02:00" finish="2012-10-25T22:49:05.7467250+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AccountDAOConstructorTest" storage="c:\users\griddy\documents\visual studio 2010\careersproject\testcases\bin\debug\testcases.dll" id="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a">
+      <Execution id="1fc9c232-c03b-4a74-b9e9-8c08bc911fc1" />
+      <TestMethod codeBase="C:/Users/griddy/Documents/Visual Studio 2010/CareersProject/TestCases/bin/Debug/TestCases.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCases.AccountDAOTest, TestCases, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AccountDAOConstructorTest" />
+      <AspNet webSiteUrl="http://localhost:3534/">
+        <Host pathToWebApp="%PathToWebRoot%\..\CareersProject\DAL\DAL" webAppRoot="/" />
+      </AspNet>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" executionId="1fc9c232-c03b-4a74-b9e9-8c08bc911fc1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1fc9c232-c03b-4a74-b9e9-8c08bc911fc1" testId="801a05f5-3864-fa5f-4bfd-17c2d5b5c07a" testName="AccountDAOConstructorTest" computerName="SKIM" startTime="2012-10-25T22:49:05.5487136+02:00" endTime="2012-10-25T22:49:05.7377245+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fc9c232-c03b-4a74-b9e9-8c08bc911fc1">
+      <Output>
+        <ErrorInfo>
+          <Message>The Web request 'http://localhost:3534/' completed successfully without running the test. This can occur when configuring the Web application for testing fails (an ASP.NET server error occurs when processing the request), or when no ASP.NET page is executed (the URL may point to an HTML page, a Web service, or a directory listing). Running tests in ASP.NET requires the URL to resolve to an ASP.NET page and for the page to execute properly up to the Load event. The response from the request is stored in the file 'WebRequestResponse_AccountDAOConstructo.html' with the test results; typically this file can be opened with a Web browser to view its contents.</Message>
+        </ErrorInfo>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="SKIM\WebRequestResponse_AccountDAOConstructo.html" />
+      </ResultFiles>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Account/Account.master" AutoEventWireup="true" CodeBehind="Recruter.master.cs" Inherits="DAL.Account.Recruter.Recruter" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="SideContent" runat="server">
+
+
+    <asp:Button ID="Button1" runat="server" Text="Select Vacancy" 
+        PostBackUrl="~/Account/Recruter/SelectVacancy.aspx" Width="95%" />
+    <asp:Button ID="btnAll" runat="server" Text="View All Applicants" 
+        PostBackUrl="~/Account/Recruter/ViewAll.aspx" style="margin-bottom: 0px" 
+        Width="95%" />
+    <asp:Button ID="btnShortlisted" runat="server" Text="View Shortlisted" 
+        PostBackUrl="~/Account/Recruter/ViewShortlisted.aspx" Width="95%" />
+    <asp:Button ID="btnInverview" runat="server" Text="Add Vacancy" 
+        PostBackUrl="~/Account/Recruter/AddVacancy.aspx" Width="95%" />
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="AccountContent" runat="server">
+    <asp:ContentPlaceHolder ID="AccountContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
